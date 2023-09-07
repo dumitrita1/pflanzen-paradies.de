@@ -3,32 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
-        <style>
-            nav a {
-                color: green;
-            }
-        </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="/">
-                    Planzen Paradies
-                </a>
-        
-                <a href="/ueber-uns/">
-                    Über uns
-                </a>
-        
-                <a href="/shop/">
-                    Shop
-                </a>
-            </nav>
-        </header>
+        <?php include "includes/header.php" ?>
 
         <main>
             <h1>
-                Faire Pflanzen von Hand aufgezogen
+            Wir unterstützen Sie dabei, Ihre Räume und Gärten zum Leben zu erwecken
             </h1>
     
             <h2>
@@ -116,12 +97,6 @@
             </ol>
         </main>
 
-        <footer>
-            Follow uns
-            <a href="https://de-de.facebook.com/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a href="https://twitter.com/?lang=ro" target="_blank">X (Twitter)</a>
-            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-        </footer>
+        <?php include "includes/footer.php" ?>
     </body>
 </html>
