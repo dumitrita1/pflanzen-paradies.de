@@ -15,22 +15,20 @@
             <h2>
                 Empfohlene Produkte
             </h2>
-            
             <ul>
                 <li>
-                    <img src="startseite/img/graphics.jpg" width="100px" alt="Ein freigestellter Zweig von einer Pflanze mit zwei Blättern">
+                    <img src="deko/img/planta1.jpg" width="100px" alt="Strelitzia">
                     
-                    Kaktus
+                    Strelitzia
                 </li>
                 <li>
-                    <img src="startseite/img/graphics.jpg" width="100px" alt="Ein freigestellter Zweig von einer Pflanze mit zwei Blättern">
+                    <img src="deko/img/planta3.jpg" width="100px" alt="Monstera">
     
-                    Farn
+                   Monstera
                 </li>
                 <li>
-                    <img src="startseite/img/graphics.jpg" width="100px" alt="Ein freigestellter Zweig von einer Pflanze mit zwei Blättern">
-    
-                    Palme
+                    <img src="deko/img/planta4.jpg" width="100px" alt="Zamioculcas">
+                    Zamioculcas
                 </li>
             </ul>
     
