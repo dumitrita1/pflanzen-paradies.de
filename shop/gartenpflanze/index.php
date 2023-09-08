@@ -18,6 +18,7 @@
                    im Winter im Haus halten möchten? Lassen Sie sich inspirieren und wer weiß, 
                    vielleicht haben Sie schon bald eine schöne Freilandpflanze in Ihrem Garten.
             </p>
+
             <ul>
                         <li>
                         <a href="/shop/gartenpflanze/bonsai">

@@ -9,10 +9,15 @@
 
         <main>
             <h1>
-                Die Menschen, die dafür sorgen, dass die Pflanzen sicher bei Ihnen ankommen
+            Trockenen Blumen 
             </h1>
+            <p>  Sind Sie es leid, Blumen zu kaufen? Eine Lösung sind Trockenblumen,
+                 die immer aktuell und schön sind. Probieren Sie eine der 3 Varianten aus,
+                  die wir auf Lager haben, und wir versprechen Ihnen, dass Sie nicht enttäuscht sein werden.</p>
         </main>
 
         <?php include ".../includes/footer.php" ?>
+
+
     </body>
 </html>

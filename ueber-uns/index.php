@@ -19,22 +19,22 @@
 
             <ul>
                 <li>
-                    <img src="ueber-uns/img/MatthiasMüller.jpg" width="100px" alt="Matthias Müller - Designer">
+                    <img src="/ueber-uns/img/MatthiasMüller.jpg" width="100px" alt="Matthias Müller - Designer">
                     <strong>Matthias Müller</strong> Designer
                 </li>
                 <li>
-                    <img src="ueber-uns/img/SuniLee.jpg" width="100px" alt="Suni Lee - Floristin">
+                    <img src="/ueber-uns/img/SuniLee.jpg" width="100px" alt="Suni Lee - Floristin">
     
                     <strong>Suni Lee</strong> Floristin
                 </li>
                 <li>
-                    <img src="ueber-uns/img/johnDeo.jpg" width="100px" alt="John Doe - Gärtner">
+                    <img src="/ueber-uns/img/johnDeo.jpg" width="100px" alt="John Doe - Gärtner">
     
                     <strong>John Doe</strong> Gärtner
                 </li>
             </ul>
 
-            <img src="ueber-uns/img/team.jpg" width="100px" alt= "Team">
+            <img src="/ueber-uns/img/team.jpg" width="300px" alt="Team">
             <p> <strong>Finde den passenden Pflanzen-Buddy!</strong></p>
             <p>Du hast auch manchmal Probleme dich zu entscheiden? Mit unserem Pflanzenfinder findest du im 
                 Handumdrehen dein perfektes Pflanzen-Match! Damit du auch genau mit der Pflanze nach Hause gehst, 

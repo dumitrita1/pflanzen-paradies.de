@@ -16,12 +16,14 @@
             </p>
             <form>
                 <label>
-                    Grose
+                    Größe
                 </label>
-
-                <input type="text" />
-
-        
+                
+                <select>
+                    <option value="small">Klein</option>
+                    <option value="medium">Mittel</option>
+                    <option value="large" selected>Groß</option>
+                </select>
             </form>
             <h2>
                 Unsere Kategorien

@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <style>
+            svg {
+                color: green;
+            }
+        </style>
     </head>
     <body>
         <?php include "../includes/header.php" ?>
@@ -11,29 +16,44 @@
             <h1>
             Sie wissen nicht, wie Sie Pflanzen pflegen sollen? Hier ist es für Sie!
             </h1>
-            <img src="lernen/img/anfaenger.jpg" width="200px" alt="Eine Frau mit einem Computer">
-            <a href="https://plantleen.com/7-pflegeleichte-zimmerpflanzen-fuer-anfaenger/" target="_blank">7 Pflanzen für Anfänger</a>
-            <img src="lernen/img/reinigen.jpg" width="200px" alt="Ein Mann mit Hund reinigt die Blätter der Pflanzen">
-            <a href="https://www.feey-pflanzen.de/blogs/pflanzen-blog/blaetter-von-zimmerpflanzen-reinigen-abstauben-abduschen?psafe_param=1&klar_source=google&klar_cpid=18721491246&klar_adid=631165025167&gad=1&gclid=CjwKCAjwjOunBhB4EiwA94JWsA7e7-y41rKoRecg2FzKklCglRRNi-6qPJXUdXlNCKy3lijLMT2hCRoCb88QAvD_BwE" target="_blank">Blätter von Zimmerpflanzen reinigen </a>
-            <img src="lernen/img/tipps.jpg" width="200px" alt="Pflanzen auf einer Kommode">
-            <a href="https://be.green/de/blog/tipps-zur-wiederherstellung-einer-ubermassig-bewasserten-pflanze" target="_blank">Tipps für die Wiederherstellung Ihrer übermäßig bewässerten Pflanze </a>
+            <ul>
+                <li>
+            <a href="https://plantleen.com/7-pflegeleichte-zimmerpflanzen-fuer-anfaenger/" target="_blank">
+                <img src="/lernen/img/anfaenger.jpg" width="200px" alt="Eine Frau mit einem Computer">
+            7 Pflanzen für Anfänger
+            </li>
+                <li>
+                    <a href="https://www.feey-pflanzen.de/blogs/pflanzen-blog/blaetter-von-zimmerpflanzen-reinigen-abstauben-abduschen?psafe_param=1&klar_source=google&klar_cpid=18721491246&klar_adid=631165025167&gad=1&gclid=CjwKCAjwjOunBhB4EiwA94JWsA7e7-y41rKoRecg2FzKklCglRRNi-6qPJXUdXlNCKy3lijLMT2hCRoCb88QAvD_BwE" target="_blank">
+                        <img src="/lernen/img/tipps.jpg" width="200px" alt="Pflanzen auf einer Kommode">
+                        Blätter von Zimmerpflanzen reinigen </a>
+                </li>
+                <li>
+                    <a href="https://be.green/de/blog/tipps-zur-wiederherstellung-einer-ubermassig-bewasserten-pflanze" target="_blank">
+                        <img src="/lernen/img/reinigen.jpg" width="200px" alt="Ein Mann mit Hund reinigt die Blätter der Pflanzen">
+                        Tipps </a>
+                </li>
+            </ul>
+            
 
             <h2>
                 Empfohlene Produkte
             </h2>
             <ul>
                 <li>
-                    <img src="deko/img/planta1.jpg" width="100px" alt="Strelitzia">
+                <a href="/shop/zimmerpflanze/strelitzia">
+                    <img src="/deko/img/planta1.jpg" width="100px" alt="Strelitzia">
                     
                     Strelitzia
                 </li>
                 <li>
-                    <img src="deko/img/planta3.jpg" width="100px" alt="Monstera">
+                <a href="/shop/zimmerpflanze/monstera">
+                    <img src="/deko/img/planta3.jpg" width="100px" alt="Monstera">
     
                    Monstera
                 </li>
                 <li>
-                    <img src="deko/img/planta4.jpg" width="100px" alt="Zamioculcas">
+                <a href="/shop/zimmerpflanze/zamioculcas">
+                    <img src="/deko/img/planta4.jpg" width="100px" alt="Zamioculcas">
                     Zamioculcas
                 </li>
             </ul>
@@ -42,12 +62,15 @@
              die es noch werden wollen, teilen</p>
              <ol>
                 <li>
+                <i class="fa-regular fa-leaf-heart fa-xl" style="color: #588b6c;"></i>
                     Dein Pflanzen-Match
                 </li>
                 <li>
+                <i class="fa-solid fa-truck" style="color: #588b6c;"></i>
                     Konstenlose Lieferung
                 </li>
                 <li>
+                <i class="fa-solid fa-hand-holding-seedling" style="color: #588b6c;"></i>
                     Unsere liebevolle Pflanzenstube
                 </li>
                 <li>

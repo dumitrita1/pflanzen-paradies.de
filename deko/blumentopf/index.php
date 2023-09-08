@@ -8,9 +8,11 @@
         <?php include ".../includes/header.php" ?>
 
         <main>
+        <img src="/blumentopf/img/topf.jpg" width="100px" alt="Blumentopf">
             <h1>
-                Die Menschen, die dafür sorgen, dass die Pflanzen sicher bei Ihnen ankommen
+                Blumentopf
             </h1>
+            <p>Eine schöne Pflanze verdient natürlich auch einen schönen Blumentopf, der ihr gerecht wird.</p>
         </main>
 
         <?php include ".../includes/footer.php" ?>

@@ -9,12 +9,14 @@
 
         <main>
             <h1>
-                Die Menschen, die dafür sorgen, dass die Pflanzen sicher bei Ihnen ankommen
+                Keramikvase
             </h1>
+            <p>Möchten Sie eine qualitativ hochwertige, handgefertigte Vase zu einem guten Preis?
+                 Dann ist unser Modell genau das Richtige für Sie</p>
         </main>
 
-        <?php include "../includes/footer.php" ?>
+        <?php include ".../includes/footer.php" ?>
 
-        
+
     </body>
 </html>
