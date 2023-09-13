@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../includes/meta.php" ?>
     </head>
     <body>
         <?php include "../../includes/header.php" ?>
@@ -29,6 +30,7 @@
                     Zum Warenkorb hinzufügen
                 </button>
             </form>
+            <?php include "includes/reise.php"?>
         </main>
 
         <?php include "../../includes/footer.php" ?>

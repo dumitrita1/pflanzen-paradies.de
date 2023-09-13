@@ -15,27 +15,9 @@
             <p> Möchten Sie eine dekorative grüne Wand?
                  Dann ist die kanadische Rebe die schnellste Lösung, um eine sehr dekorative grüne Wand zu erhalten .
             </p>
-            <form>
-                <label>
-                    Größe
-                </label>
-                
-                <select>
-                    <option value="small">Klein</option>
-                    <option value="medium">Mittel</option>
-                    <option value="large" selected>Groß</option>
-                </select>
-
-                <label>
-                    Stück
-                </label>
-
-                <input type="number" >
-
-                <button>
-                    Zum Warenkorb hinzufügen
-                </button>
-            </form>
+            <?php include "../../../includes/product-form.php" ?>
+            <?php include "../../../includes/empfohlene-produkte.php"?>
+            <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>

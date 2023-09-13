@@ -99,12 +99,6 @@
             
                             SANSEVIERIA TRIFASCIATA 
                         </li>
-                        <li>
-                        <a href="/shop/zimmerpflanze/gumibaum">
-                            <img src="/shop/img/planta12.jpg" width="100px" alt="Gummibaum Abidjan">
-            
-                            Gummibaum Abidjan
-                        </li>
                     </ul>
                 </li>
                 <li>
@@ -159,7 +153,7 @@
                     </ul>
                 </li>
             </ul>
-            
+            <?php include "../includes/reise.php"?>
         </main>
 
         <?php include "../includes/footer.php" ?>

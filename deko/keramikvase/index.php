@@ -25,6 +25,7 @@
                     Zum Warenkorb hinzufügen
                 </button>
             </form>
+            <?php include "../../includes/reise.php"?>
         </main>
 
         <?php include "../../includes/footer.php" ?>

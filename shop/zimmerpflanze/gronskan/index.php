@@ -65,6 +65,8 @@
                 </li>
 
             </ol>
+            <?php include "../../../includes/empfohlene-produkte.php"?>
+            <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>

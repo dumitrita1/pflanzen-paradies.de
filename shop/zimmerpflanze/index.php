@@ -78,6 +78,7 @@
                 </li>
             
             </ul>
+            <?php include "../../includes/reise.php"?>
         </main>
 
         <?php include "../../includes/footer.php" ?>

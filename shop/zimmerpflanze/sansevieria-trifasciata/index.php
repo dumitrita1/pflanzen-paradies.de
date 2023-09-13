@@ -72,8 +72,9 @@
                     <strong>Keine teure Frisur  </strong>
                     Braune/vertrocknete Blätter können einzeln entfernt werden.   
                 </li>
-
             </ol>
+            <?php include "../../../includes/empfohlene-produkte.php"?>
+            <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>

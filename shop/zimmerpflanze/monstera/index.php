@@ -18,30 +18,7 @@
              dunkelgrünen Blättern schmückt, die eine Länge von bis zu 90 cm erreichen können?
               Dann brauchen Sie Monstera!
             </p>
-            <form>
-                <label>
-                    Größe
-                </label>
-                
-                <select>
-                    <option value="small">Klein</option>
-                    <option value="medium">Mittel</option>
-                    <option value="large" selected>Groß</option>
-                </select>
-
-                <label>
-                    Stück
-                </label>
-
-                <input type="number" value="10">
-
-                <button>
-                    In den Warenkorb
-                </button>
-                <button>
-                    Love it!
-                </button>
-            </form>
+            <?php include "../../../includes/product-form.php" ?>
 
             <p>
              Was braucht deine Monstera deliciosa?
@@ -76,6 +53,8 @@
                 </li>
 
             </ol>
+            <?php include "../../../includes/empfohlene-produkte.php"?>
+            <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>

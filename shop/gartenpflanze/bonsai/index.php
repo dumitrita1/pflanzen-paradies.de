@@ -18,6 +18,8 @@
                 Die Blätter sind glänzend grün und verströmen ein zartes Zitrusaroma, wenn man daran reibt. 
             </p>
             <?php include "../../../includes/product-form.php" ?>
+            <?php include "../../../includes/empfohlene-produkte.php"?>
+            <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>

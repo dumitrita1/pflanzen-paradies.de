@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "includes/meta.php" ?>
     </head>
     <body>
         <?php include "includes/header.php" ?>
@@ -13,26 +14,7 @@
             Wir unterstützen Sie dabei, Ihre Räume und Gärten zum Leben zu erwecken
             </h1>
     
-            <h2>
-                Empfohlene Produkte
-            </h2>
-            
-            <ul>
-                <li><a href="/shop/zimmerpflanze/strelitzia">
-                    <img src="/deko/img/planta1.jpg" width="100px" alt="Strelitzia">
-                    
-                    Strelitzia
-                </li>
-                <li><a href="/shop/zimmerpflanze/monstera">
-                    <img src="/deko/img/planta3.jpg" width="100px" alt="Monstera">
-    
-                   Monstera
-                </li>
-                <li><a href="/shop/zimmerpflanze/zamioculcas">
-                    <img src="/deko/img/planta4.jpg" width="100px" alt="Zamioculcas">
-                    Zamioculcas
-                </li>
-            </ul>
+            <?php include "includes/empfohlene-produkte.php"?>
             <p>
                 Die Menschen, die dafür sorgen, dass die Pflanzen sicher bei Ihnen ankommen
             </p>
@@ -77,24 +59,7 @@
                 </li>
             </ol>
     
-            <p>
-                Die Reise zu deiner neuen Pflanze Stressfrei deine Zimmerpflanze online bestellen
-            </p>
-    
-            <ol>
-                <li>
-                    Deine Pflanze finden
-                </li>
-                <li>
-                    Bestellen
-                </li>
-                <li>
-                    Lieferung nach Hause
-                </li>
-                <li>
-                    Stressfrei genießen
-                </li>
-            </ol>
+            <?php include "includes/reise.php"?>
         </main>
 
         <?php include "includes/footer.php" ?>

@@ -43,7 +43,7 @@
                     Love it!
                 </button>
             </form>
-
+            
             <p>
             Was braucht deine Goldfruchtpalme?
             </p>
@@ -75,8 +75,9 @@
                     <strong>Keine teure Frisur </strong>
                     Nicht notwendig, braune/vertrocknete Blätter können einzeln entfernt werden. 
                 </li>
-
             </ol>
+            <?php include "../../../includes/empfohlene-produkte.php"?>
+            <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>

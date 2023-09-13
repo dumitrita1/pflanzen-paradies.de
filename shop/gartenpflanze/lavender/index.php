@@ -18,9 +18,7 @@
                 Die Blätter sind glänzend grün und verströmen ein zartes Zitrusaroma, wenn man daran reibt. 
             </p>
             <form>
-                <label>
-                    Größe
-                </label>
+              
                 <label>
                     Stück
                 </label>
@@ -31,6 +29,9 @@
                     Zum Warenkorb hinzufügen
                 </button>
             </form>
+        
+            <?php include "../../../includes/empfohlene-produkte.php"?>
+            <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>
