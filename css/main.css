@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: sans-serif;
+
+}
+.main-nav {
+    color:rgb(154, 159, 118);
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    
+}
+.logo {
+    display: flex;
+    color: darkgreen;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+}
+.nav-links  a {
+    display: flex;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    display:inline-block;
+    padding:16px;
+
+}
+.nav-icons a {
+    display: flex;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+
+}
+
+.two-column {
+    display: flex;
+}
+
+.two-column > * {
+    width: 50%;
+}
+
+.first-list {
+    background-color: green;
+}
+
+.second-list {
+    width: 50%;
+    background-color: pink;
+}
+
+.recommendations {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    border: 5px solid blue;
+    background-color: yellow;
+}
+
+.recommendations a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
