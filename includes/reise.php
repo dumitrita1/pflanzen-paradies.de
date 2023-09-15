@@ -1,18 +1,32 @@
-<p>
-                Die Reise zu deiner neuen Pflanze Stressfrei deine Zimmerpflanze online bestellen
+        <div class="text-reise">
+            <p>
+            Die Reise zu deiner neuen Pflanze Stressfrei deine Zimmerpflanze online bestellen
             </p>
+        </div>
     
-            <ol>
-                <li>
+        <ul class="reise">
+            <li>
+                 <a>
+                    <img src="/img/planta-icon.svg" alt="Plant">
                     Deine Pflanze finden
-                </li>
-                <li>
+                </a>
+             </li>
+             <li>
+                 <a>
+                    <img src="/img/card.svg" alt="Visa">
                     Bestellen
-                </li>
-                <li>
+                </a>
+             </li>
+             <li>
+                 <a>
+                    <img src="/img/auto.svg" alt="Auto">
                     Lieferung nach Hause
-                </li>
-                <li>
+                </a>
+             </li>
+             <li>
+                 <a>
+                    <img src="/img/glass.svg" alt="Stressfrei">
                     Stressfrei genießen
-                </li>
-            </ol>
+                </a>
+             </li>
+        </ul>

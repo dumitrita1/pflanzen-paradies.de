@@ -6,7 +6,10 @@
 }
 body {
     font-family: sans-serif;
-
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    
 }
 .main-nav {
     color:rgb(154, 159, 118);
@@ -49,41 +52,203 @@ body {
 
 }
 
-.two-column {
+
+.img-ersteSeite {
+    background-image: url(/img/plants.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: scroll;
+    height: 600px;
+    width: 100%;
+}
+.img-ersteSeite h1{
     display: flex;
+    max-width: 500px;
+    padding-top: 5%;
+    padding-left: 75%;
+    font-size: 24px;
+    color:rgb(55, 117, 62);
 }
-
-.two-column > * {
-    width: 50%;
+.img-ersteSeite p a{
+    text-decoration: none;
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 45%;
+    padding-top: 16%;
+    color:rgb(255, 255, 255);
 }
-
-.first-list {
-    background-color: green;
+.text {
+    text-align: center;
+    padding-top: 15px;
+    color: darkgreen;
 }
-
-.second-list {
-    width: 50%;
-    background-color: pink;
-}
-
 .recommendations {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 10%;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin-top: 60px;
-    margin-bottom: 100px;
-    border: 5px solid blue;
-    background-color: yellow;
+    padding: 0;
+    margin: 0;
 }
 
-.recommendations a {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.recommendations li {
+    flex: 1;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
 }
+.recommendations a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+.recommendations img {
+    max-width: 100%;
+    height: auto;
+}
+.recommendations img:first-child {
+    height: 257px;
+    width: 237px ;
+}
+.recommendations li:last-child {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100px;
+}
+
+.textperssonal {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: darkgreen;
+    font-size: 25px;
+    font-weight: bold;
+}
+.perssonal {
+    display: flex;      
+    list-style-type: none; 
+}
+.perssonal li {
+    flex: 1;              
+    text-align: center;  
+}
+.perssonal img{
+        width: 100%;
+        height: auto;
+        padding-left: 25px;
+        border-radius: 10%;
+}
+.perssonal li a {
+    padding: 10px;        
+}
+ .miniplant {
+    background-image: url(/img/plantutamicuta.jpg);
+    background-repeat: no-repeat;
+    padding-top: 35px;
+    background-size: contain;
+    background-position:center;
+}
+ .first-column li {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 300px;;
+    color: rgb(18, 50, 18);
+    font-size: 25px;
+    font-weight: bold;
+ } 
+ .second-column li {
+    list-style: none;
+    text-align:end;
+    padding-right: 300px;
+    padding-bottom: 25px;
+    color: rgb(18, 50, 18);
+    font-size: 25px;
+    font-weight: bold;
+ }
+ .text-reise {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(9, 9, 9);
+    font-size: 25px;
+    font-weight: bold;
+    background-color: hsl(34, 78%, 91%, 0.37);
+ }
+ .reise {
+    padding-top: 20px;
+    padding-left: 30px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(34, 78%, 91%, 0.37);
+}
+
+.reise li {
+    flex: 1;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.reise a {
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    padding:40px;
+}
+
+.reise img {
+   width: 60px;
+    height: auto;
+}
+
+
+.footer {
+    background-color: rgba(167, 186, 157, 1);
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.follow {
+    width: 60%; 
+    box-sizing: border-box; 
+}
+.contact {
+    width: 30%; 
+    box-sizing: border-box; 
+}
+
+
+ul.follow, ul.contact {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.follow p, .contact p {
+    font-weight: bold; 
+    margin-top: 0; 
+}
+
+
+.follow a, .contact a {
+    color: #3e8956 ;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.contact img {
+    height: 20px; 
+    width: auto; 
+    margin-right: 5px; 
+}
+
+

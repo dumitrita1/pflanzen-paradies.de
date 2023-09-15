@@ -6,91 +6,65 @@
         <?php include "includes/meta.php" ?>
     </head>
     <body>
-        <div class="img"
+            <div class="img-ersteSeite">
         <?php include "includes/header.php" ?>
-
         <main>
             <h1>
-                Wir unterstützen Sie dabei, Ihre Räume und Gärten zum Leben zu erwecken
+                !!Wir unterstützen Sie dabei, Ihre Räume und Gärten zum Leben zu erwecken!!
             </h1>
-</div>
-            <p>
-                <span>
-                    <span>
-                        Inline Element
-                    </span>
-                </span>
-            </p>
-
-            <div class="two-column">
-                <p>
-                    Absatz 1: Block Element
-                </p>
-                <p>
-                    Absatz 2
-                </p>
+            <p> <a href="/shop">Shop NOW</a></>
             </div>
-
-            <div class="two-column">
-                <ul class="first-list">
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-
-                <ul class="second-list">
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-            </div>
-
             <?php include "includes/empfohlene-produkte.php"?>
-            <p>
+            <p class=textperssonal>
                 Die Menschen, die dafür sorgen, dass die Pflanzen sicher bei Ihnen ankommen
             </p>
             
-            <ul>
-                <li>
-                    <img src="img/MatthiasMüller.jpg" width="100px" alt="Matthias Müller - Designer">
-                    
-                    <strong>Matthias Müller</strong> Designer
-                </li>
-                <li>
-                    <img src="img/SuniLee.jpg" width="100px" alt="Suni Lee- Floristin">
+            <ul class="perssonal">
+            <li>
+                    <a><img src="img/SuniLee.jpg" alt="Suni Lee- Floristin">
     
-                    <strong>Suni Lee</strong> Floristin
+                    <strong>Suni Lee</strong> Floristin</a>
                 </li>
                 <li>
-                    <img src="img/johnDeo.jpg" width="100px" alt="John Doe- Gärtner">
-                    <strong>John Doe</strong> Gärtner
+                    <a><img src="img/MatthiasMüller.jpg" alt="Matthias Müller - Designer">
+                    
+                    <strong>Matthias Müller</strong> Designer</a>
+                </li>
+            
+                <li>
+                    <a><img src="img/johnDeo.jpg" alt="John Doe- Gärtner">
+                    <strong>John Doe</strong> Gärtner</a>
                 </li>
             </ul>
-
-            <img src="img/logo.jpg" width="150px" alt="Pflanzen Paradis- logo ">
-    
-            <ol>
-                <li>
-                    Gratisversand
-                </li>
-                <li>
-                    Schnelle Lieferung
-                </li>
-                <li>
-                    Rabatte
-                </li>
-                <li>
-                    Die beste Qualität
-                </li>
-                <li>
-                    Garantie
-                </li>
-                <li>
-                    Gute Preise
-                </li>
+            <div class= "footerbild">
+            <ol class="miniplant">
+                <div class="first-column">
+                    <li>
+                         Gratisversand
+                    </li>
+                    <li>
+                        Schnelle Lieferung
+                    </li>
+                    <li>
+                        Rabatte
+                    </li>
+                </div>
+                <div class="second-column">
+                    <li>
+                        Die beste Qualität
+                    </li>
+                    <li>
+                        Garantie
+                    </li>
+                    <li>
+                        Gute Preise
+                    </li>
+                </div>
             </ol>
-    
+
             <?php include "includes/reise.php"?>
         </main>
-
         <?php include "includes/footer.php" ?>
+    </div>
     </body>
 </html>
