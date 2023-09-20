@@ -9,8 +9,8 @@
         </ul>
         <ul class="follow">
             <p> Follow uns</p>
-            <li><a href="https://de-de.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><img src="/img/facebook.png" alt="Facebook"><a href="https://de-de.facebook.com/" target="_blank">Facebook</a></li>
+            <li><img src="/img/instagram.png" alt="Instagram"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><img src="/img/youtube.png" alt="Youtube"><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
         </ul>
 </footer>

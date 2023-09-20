@@ -1,9 +1,18 @@
+@import url("site-header.css");
+@import url("call-to-action.css");
+@import url("flip-card.css");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
+
+a {
+    color: inherit;
+}
+
 body {
     font-family: sans-serif;
     min-height: 100vh;
@@ -11,6 +20,13 @@ body {
     margin: 0 auto;
     
 }
+.document {
+    background-image: url('/img/footer.jpg');
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
 .main-nav {
     color:rgb(154, 159, 118);
     border: 1px solid;
@@ -26,6 +42,8 @@ body {
     font-style: oblique;
     font-size: 20px;
     font-weight: bold;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
 }
 
 .nav-links {
@@ -83,6 +101,7 @@ body {
     text-align: center;
     padding-top: 15px;
     color: darkgreen;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 .recommendations {
     list-style: none;
@@ -102,8 +121,6 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    color: green;
-    font-weight: bold;
 }
 
 .recommendations img {
@@ -120,31 +137,6 @@ body {
     flex-basis: 100px;
 }
 
-.textperssonal {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: darkgreen;
-    font-size: 25px;
-    font-weight: bold;
-}
-.perssonal {
-    display: flex;      
-    list-style-type: none; 
-}
-.perssonal li {
-    flex: 1;              
-    text-align: center;  
-}
-.perssonal img{
-        width: 100%;
-        height: auto;
-        padding-left: 25px;
-        border-radius: 10%;
-}
-.perssonal li a {
-    padding: 10px;        
-}
  .miniplant {
     background-image: url(/img/plantutamicuta.jpg);
     background-repeat: no-repeat;
@@ -176,6 +168,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     background-color: hsl(34, 78%, 91%, 0.37);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
  }
  .reise {
     padding-top: 20px;
@@ -185,6 +178,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: hsl(34, 78%, 91%, 0.37);
+    gap: 10rem;
 }
 
 .reise li {
@@ -197,9 +191,10 @@ body {
     display:block;
     text-decoration: none;
     text-align: center;
-    color: green;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding:40px;
+    
 }
 
 .reise img {
@@ -209,36 +204,45 @@ body {
 
 
 .footer {
-    background-color: rgba(167, 186, 157, 1);
+    background-color: rgba(167, 186, 157, 0.5 );
     display: flex; 
     justify-content: space-between;
     padding: 20px;
 }
 
 .follow {
-    width: 60%; 
+    
+    width: 75%; 
     box-sizing: border-box; 
+    color: #2f523a ;
 }
 .contact {
-    width: 30%; 
+    width: 20%; 
     box-sizing: border-box; 
+    color: #3e8956 ;
 }
 
 
-ul.follow, ul.contact {
+ul.follow {
     list-style-type: none;
-    padding: 0; 
+    padding: 2%; 
     margin: 0; 
+}
+ul.contact {
+    list-style-type: none;
+    padding: 1%; 
+    margin: 0;
 }
 
 .follow p, .contact p {
     font-weight: bold; 
     margin-top: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
 }
 
 
 .follow a, .contact a {
-    color: #3e8956 ;
     font-weight: bold;
     text-decoration: none;
     margin-right: 10px;
@@ -249,6 +253,11 @@ ul.follow, ul.contact {
     height: 20px; 
     width: auto; 
     margin-right: 5px; 
+}
+.follow img {
+    height: 20px; 
+    width: auto; 
+    margin-right: 5px;
 }
 
 

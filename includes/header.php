@@ -1,6 +1,10 @@
-<header>
+<header class="site-header">
     <nav class="main-nav">
-        <div class ="logo">Planzen Paradies</div>
+        <div class ="logo">
+            <a href="/">
+                Planzen Paradies
+            </a>
+        </div>
         
         <div class="nav-links">
             <a href="/ueber-uns/">

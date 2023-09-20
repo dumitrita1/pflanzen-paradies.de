@@ -8,7 +8,7 @@
             <li>
                  <a>
                     <img src="/img/planta-icon.svg" alt="Plant">
-                    Deine Pflanze finden
+                    Pflanze finden
                 </a>
              </li>
              <li>

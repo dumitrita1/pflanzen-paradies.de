@@ -3,17 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../includes/meta.php" ?>
     </head>
     <body>
         <?php include "../../includes/header.php" ?>
 
         <main>
-            <h1>
-                Zimmer Pflanzen
-            </h1>
-            <p>
-                Wir sind der Spezialist für Zimmerpflanzen und bieten eine große Auswahl an verschiedenen Arten. Von niedlichen kleinen Pflanzen bis zu schönen großen Pflanzen und von einfachen Zimmerpflanzen bis zu Luftreinigungspflanzen.
-            </p>
+            <div class="call-to-action">
+                <h1>
+                    Zimmer Pflanzen
+                </h1>
+                <p>
+                    Wir sind der Spezialist für Zimmerpflanzen und bieten eine große Auswahl an verschiedenen Arten. Von niedlichen kleinen Pflanzen bis zu schönen großen Pflanzen und von einfachen Zimmerpflanzen bis zu Luftreinigungspflanzen.
+                </p>
+            </div>
 
             <ul>
                 <li>
