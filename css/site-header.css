@@ -1,5 +1,10 @@
 .site-header {
     position: absolute;
     top: 0;
+    width: 100%;
     max-width: 1200px;
+}
+
+.intro-section p {
+    color: blue;
 }

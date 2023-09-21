@@ -13,4 +13,13 @@
             <li><img src="/img/instagram.png" alt="Instagram"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
             <li><img src="/img/youtube.png" alt="Youtube"><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
         </ul>
+        <div class="nav">
+            <a href="/ueber-uns/" class="nav__link">
+                Impressum
+            </a>
+
+            <a href="/shop/" class="nav__link">
+                Datenschutz
+            </a>
+        </div>
 </footer>

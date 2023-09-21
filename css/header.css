@@ -1,0 +1,45 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 320px;
+    border: thick double rgb(169, 174, 126);
+}
+.site-header__logo, .nav-links{
+    color: rgb(33, 77, 33);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-header__logo{
+    font-size: 20px;
+    text-shadow: 0 2px 2px rgba(12, 133, 65, 0.6);
+    font-style: oblique;
+}
+
+.site-header__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__link{
+    text-shadow: 0 2px 2px rgba(25, 68, 41, 0.4);
+    font-size: 15px;
+    font-style: oblique;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav__icon img{
+    height: 20px; 
+    width: auto; 
+    margin-right: 5px; 
+}

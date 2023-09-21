@@ -1,0 +1,53 @@
+
+.footer {
+    background-color: rgba(167, 186, 157, 0.5 );
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.follow {
+    
+    width: 65%; 
+    box-sizing: border-box; 
+    color: #2f523a ;
+}
+.contact {
+    width: 30%; 
+    box-sizing: border-box; 
+    color: #3e8956 ;
+}
+
+
+ul.follow {
+    list-style-type: none;
+    padding: 2%; 
+    margin: 0; 
+}
+ul.contact {
+    list-style-type: none;
+    padding: 1%; 
+    margin: 0;
+}
+
+.follow p, .contact p {
+    font-weight: bold; 
+    margin-top: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}
+
+
+.follow a, .contact a {
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.contact img, .follow img {
+    height: 20px; 
+    width: auto; 
+    margin-right: 5px; 
+}
+
