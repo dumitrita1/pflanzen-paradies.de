@@ -3,47 +3,54 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../../includes/header.php" ?>
-
         <main>
-            
-            <img src="zamioculcas-zamiifolia/img/planta9.jpg" width="350px" alt="Zamioculcas Zamiifloia">
+        <div class="product">
+        <div class="product-card">
+            <div class="product-card__container">
+                <img class="product-card__container-img"src="zamioculcas-zamiifolia/img/planta9.jpg" alt="Zamioculcas Zamiifloia">
+            </div>
+            <div class="product-card__container">
+                <h1 class="product-card__container-name">
+                    Zamioculcas Zamiifolia <button class="zu-wissen"> 65€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                </h1>
+                <p class="product-card__container-text" > Mysteriös & geheimnisvoll - das ist unsere Zamioculcas zamiifolia 'Raven'!
+                        Die schwarze Glücksfeder ist aufgrund ihrer dunklen Farbe ein echter Hingucker. 
+                        Man munkelt, dass sogar Wednesday Addams eine 'Raven' in ihrem Zimmer stehen hat - sie ist also perfekt für all diejenigen unter uns, für die es gern mal etwas dunkler sein darf. 
+                        Darüber hinaus ist sie natürlich genauso unkompliziert wie die normale Glücksfeder - ein echter Glücksgriff eben.
+                </p>
+                <form>
+                    <label>
+                        Größe
+                    </label>
+                    
+                    <select>
+                        <option value="small">Klein</option>
+                        <option value="medium">Mittel</option>
+                    </select>
 
-            <h1>
-            Zamioculcas Zamiifolia
-            </h1>
-            <p> Mysteriös & geheimnisvoll - das ist unsere Zamioculcas zamiifolia 'Raven'!
-                 Die schwarze Glücksfeder ist aufgrund ihrer dunklen Farbe ein echter Hingucker. 
-                 Man munkelt, dass sogar Wednesday Addams eine 'Raven' in ihrem Zimmer stehen hat - sie ist also perfekt für all diejenigen unter uns, für die es gern mal etwas dunkler sein darf. 
-                Darüber hinaus ist sie natürlich genauso unkompliziert wie die normale Glücksfeder - ein echter Glücksgriff eben.
-            </p>
-            <form>
-                <label>
-                    Größe
-                </label>
-                
-                <select>
-                    <option value="small">Klein</option>
-                    <option value="medium">Mittel</option>
-                </select>
+                    <label>
+                        Stück
+                    </label>
 
-                <label>
-                    Stück
-                </label>
-
-                <input type="number">
-
-                <button>
-                    In den Warenkorb
-                </button>
-                <button>
-                    Love it!
-                </button>
-            </form>
-
-            <p>
+                    <input type="number">
+                    <div class="product-form__button">
+                        <button>
+                            Love it!
+                        </button>
+                        <button>
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="plant-needs">
+            <p class="plant-needs__title">
             Was braucht deine schwarze Glücksfeder?
             </p>
     
@@ -72,13 +79,14 @@
                     <strong>Bitte nicht zurückschneiden!</strong>
                     Das führt zu unschönen braunen Stellen.       
                 </li>
-
             </ol>
-            <?php include "../../../includes/empfohlene-produkte.php"?>
+        </div>
+        </div>
+            <?php include "../../../includes/recommendation.php"?>
             <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>

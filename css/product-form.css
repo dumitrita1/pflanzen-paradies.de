@@ -1,0 +1,37 @@
+form {
+    display: grid;
+    width: 30%;
+    height: auto;
+    gap: var(--gap-lg);
+    margin-top: 10%;
+    margin-left: 45%;
+
+}
+.product-form__button{
+    display: flex;
+    gap: 10%;
+}
+select, input, button {
+    border-radius: 5px;
+    padding: 2%;
+}
+.product-form__button button:first-child {
+    background-color: #fc3b00;
+    border: 1px solid #ccc;
+    color: var(--color-second);
+    transition: background-color 0.3s ease;
+}
+
+.product-form__button button:last-child {
+    background-color: var(--color-primary);
+    border: 1px solid #ccc;
+    color: var(--color-second);
+    transition: background-color 0.3s ease;
+}
+
+.product-form__button button:last-child:hover {
+    background-color: var(--color-primary__dark);
+}
+.product-form__button button:first-child:hover {
+    background-color: #c52e00;
+}

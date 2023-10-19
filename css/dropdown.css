@@ -1,0 +1,22 @@
+.nav__dropdown {
+    margin-top: 3%;
+    display: none;
+    position: absolute;
+    left: 75%;
+    border-radius: 5%;
+    color: var(--color-second);
+    box-shadow: 0 4px 8px var(--color-second__dark);
+    padding: 3%;
+     
+}
+
+.nav__dropdown.opened {
+    display: block;
+    align-items: center;
+    min-height: 10rem;
+    background-color:rgb(199 178 135);
+    background-image:url("/img/drop-down.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}

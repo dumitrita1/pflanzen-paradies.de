@@ -1,34 +1,40 @@
 <header class="site-header">
-    <a href="/"class="site-header__logo">
-        Planzen Paradies
+    <a href="/" class="site-header__logo">
+        Pflanzen Paradies
     </a>
     <nav class="site-header__navigation">
         <div class="nav">
             <a href="/ueber-uns/" class="nav__link">
-                Über uns
+                <p class="nav__text">Über uns</p>
             </a>
 
             <a href="/shop/"class="nav__link">
-                Shop
+                <p class="nav__text">Shop</p>
             </a>
             <a href="/deko/"class="nav__link">
-                Deko
+                <p class="nav__text">Deko</p>
             </a>
             <a href="/lernen/" class="nav__link">
-                Lernen
+                <p class="nav__text" >Lernen</p>
             </a>
         </div>
 
         <div class="nav">
-            <a href="/suchen/"class="nav__icon">
+        <input type="text" placeholder="Suche">
+            <button class="nav__button">
                 <img src="/img/search.png" alt="Search">
-            </a>
-            <a href="/favorit/"class="nav__icon">
+            </button>
+            <?php include __DIR__ . "/search.php" ?>
+            
+            <button class="nav__button">
                 <img src="/img/heart.png" alt="Love">
-            </a>
-            <a href="/wagen/"class="nav__icon">
+            </button>
+            <?php include __DIR__ . "/fav.php" ?>
+
+            <button class="nav__button">
                 <img src="/img/purchase.png" alt="Corb">
-            </a>
+            </button>
+            <?php include __DIR__ . "/cart.php" ?>
         </div>
     </nav>
 </header>

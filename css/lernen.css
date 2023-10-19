@@ -1,0 +1,70 @@
+.read-article{
+    display:grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: var(--gap-lg);
+}
+.read-article__list{
+    display: flex;
+    list-style: none;
+    border-left: 1rem solid var(--color-primary);
+    background-color: aliceblue;
+    padding: 3%;
+}
+.read-article__list p{
+    display: block;
+    text-decoration: none;
+    color: rgb(248, 127, 147);
+    text-align: center;
+    padding: 5%;
+}
+.read-article__list p a button{
+    color: red;
+    text-decoration: none;
+    background:none;
+    transform: translateY(1px);
+    font-weight: bold;
+}
+
+.plant-addiction{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 10%;
+    gap: var(--gap-lg);
+}
+.plant-addiction__text{
+    padding-top: 5%;
+}
+.text-paragraf{
+    text-align: center;
+    font-size: var(--size-md);
+    padding: 5%;
+    border-bottom: solid black;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.plant-addiction__list-style{
+    display:block;
+}
+.plant-addiction__list-text{
+    padding: 5%;
+    background-color:var(--accent-color);
+    margin: 5%;
+    font-size: var(--size-md);
+    font-weight: bold;
+
+}
+@media(max-width:590px){
+    .plant-addiction__list-text{
+        font-size:var(--size-xs);
+    }
+
+
+}

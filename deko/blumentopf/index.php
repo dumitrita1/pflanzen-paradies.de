@@ -6,10 +6,16 @@
         <?php include "../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../includes/header.php" ?>
 
         <main>
-        <img src="blumentopf/img/topf.jpg" width="350px" alt="Blumentopf">
+        <div class="product">
+        <div class="product-card">
+            <div class="product-card__container">
+                <img src="blumentopf/img/topf.jpg" width="350px" alt="Blumentopf">
+            </div>
+            <div class="product-card__container">
             <h1>
                 Blumentopf
             </h1>
@@ -30,11 +36,14 @@
                     Zum Warenkorb hinzufügen
                 </button>
             </form>
-            <?php include "includes/reise.php"?>
+            </div>
+        </div>
+        </div>
+            <?php include "../../includes/reise.php"?>
         </main>
 
         <?php include "../../includes/footer.php" ?>
 
-
+</div>
     </body>
 </html>

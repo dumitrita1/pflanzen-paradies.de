@@ -1,0 +1,32 @@
+.plant-needs{
+    margin: 5%;
+}
+.plant-needs__title{
+    font-size: var(--size-lg);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ol {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    gap: var(--gap-lg);
+    text-align: center;
+}
+
+
+
+ol li strong {
+    color:var(--color-primary);
+    display: block; 
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+
+ol li:hover {
+    background-color: #f7f7f7; 
+}
+

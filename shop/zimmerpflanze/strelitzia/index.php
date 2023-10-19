@@ -3,23 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../../includes/header.php" ?>
 
         <main>
-            
-            <img src="strelitzia/img/planta1.jpg" width="350px" alt="Strelizia">
-
-            <h1>
-            Strelitzia
-            </h1>
-            <p> Richtig gelesen, so nennt man die Baum-Strelitzie im englischsprachigen Raum! Welcher Name 
-                wird ihr wohl eher gerecht? Beide treffen jedenfalls zu, auch wenn der Englische sooo viel schöner klingt!
-                 Sie ist die größte aller Strelitzien-Arten und bekommt wunderschöne Blüten, die an Vogelschnäbel erinnern. 
-                 Ein echter Paradiesvogel eben!
-            </p>
-            <form>
+        <div class="product">
+        <div class="product-card">
+            <div class="product-card__container">
+                <img class="product-card__container-img"src="strelitzia/img/planta1.jpg" alt="Strelizia">
+            </div>
+            <div class="product-card__container">
+            <h1 class="product-card__container-name">
+                Strelitzia <button class="zu-wissen"> 25€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                </h1>
+                <p class="product-card__container-text"> Richtig gelesen, so nennt man die Baum-Strelitzie im englischsprachigen Raum! Welcher Name 
+                    wird ihr wohl eher gerecht? Beide treffen jedenfalls zu, auch wenn der Englische sooo viel schöner klingt!
+                    Sie ist die größte aller Strelitzien-Arten und bekommt wunderschöne Blüten, die an Vogelschnäbel erinnern. 
+                    Ein echter Paradiesvogel eben!
+                </p>
+                <form>
                 <label>
                     Größe
                 </label>
@@ -34,16 +39,20 @@
                 </label>
 
                 <input type="number">
-
-                <button>
-                    In den Warenkorb
-                </button>
-                <button>
-                    Love it!
-                </button>
+                <div class="product-form__button">
+                 
+                <button class="favorit" data-name="Strelizia">
+                        Love it!
+                    </button>
+                    <button>
+                        In den Warenkorb
+                    </button>
+                </div>
             </form>
-
-            <p>
+            </div>
+        </div>
+        <div class="plant-needs">
+            <p class="plant-needs__title">
             Was braucht deine Strelitzia?
             </p>
     
@@ -76,11 +85,13 @@
                 </li>
 
             </ol>
-            <?php include "../../../includes/empfohlene-produkte.php"?>
+        </div>
+        </div>
+            <?php include "../../../includes/recommendation.php"?>
             <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>

@@ -3,37 +3,42 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../../includes/header.php" ?>
-
         <main>
-            
-            <img src="gronskan/img/planta6.jpg" width="350px" alt="Grönskan">
-
-            <h1>
-            Grönskan
-            </h1>
-            <p> Du suchst was fürs Herz? Dann bist du bei unserer Herzblattblume genau richtig. 
-                Grund dafür sind ihre wunderschönen herzförmigen Blätter, die einfach jedes Herz zum Schmelzen bringen!
-            </p>
-            <form>
-
-                <label>
-                    Stück
-                </label>
-
-                <input type="number">
-
-                <button>
-                    In den Warenkorb
-                </button>
-                <button>
-                    Love it!
-                </button>
-            </form>
-
-            <p>
+        <div class="product">
+            <div class="product-card">
+                <div class="product-card__container">
+                    <img class="product-card__container-img"src="gronskan/img/planta6.jpg" alt="Grönskan">
+                </div>
+                <div class="product-card__container">
+                    <h1 class="product-card__container-name">
+                    Aloe <button class="zu-wissen"> 25€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                    </h1> 
+                    <p class="product-card__container-text"> Du suchst was fürs Herz? Dann bist du bei unserer Herzblattblume genau richtig. 
+                    Grund dafür sind ihre wunderschönen herzförmigen Blätter, die einfach jedes Herz zum Schmelzen bringen!
+                    </p>
+                    <form>
+                        <label>
+                            Stück
+                        </label>
+                        <input type="number">
+                        <div class="product-form__button">
+                        <button class="favorit" data-name="Aloe">
+                                Love it!
+                            </button>
+                            <button class="corb">
+                                In den Warenkorb
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <div class="plant-needs">
+            <p class="plant-needs__title">
             Was braucht deine Flaingoblume?
             </p>
     
@@ -63,13 +68,14 @@
                     <strong>Keine teure Frisur  </strong>
                     Rückschnitt ist nicht notwendig.   
                 </li>
-
             </ol>
-            <?php include "../../../includes/empfohlene-produkte.php"?>
+        </div>
+        </div>
+            <?php include "../../../includes/recommendation.php"?>
             <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>

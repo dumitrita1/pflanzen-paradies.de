@@ -3,24 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../../includes/header.php" ?>
-
         <main>
-            
-            <img src="monstera/img/planta3.jpg" width="350px" alt="Monstera">
-
-            <h1>
-                Monstera
-            </h1>
-            <p> Benötigen Sie eine Zimmerpflanze, die das ganze Jahr über die Vegetation aufrechterhält und mit sehr großen,
-             dunkelgrünen Blättern schmückt, die eine Länge von bis zu 90 cm erreichen können?
-              Dann brauchen Sie Monstera!
-            </p>
-            <?php include "../../../includes/product-form.php" ?>
-
-            <p>
+        <div class="product">
+        <div class="product-card">
+            <div class="product-card__container">
+                <img class="product-card__container-img"src="monstera/img/planta3.jpg" alt="Monstera">
+            </div>
+            <div class="product-card__container">
+                <h1 class="product-card__container-name">
+                    Monstera <button class="zu-wissen"> 70€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                </h1> 
+                <p class="product-card__container-text"> Benötigen Sie eine Zimmerpflanze, die das ganze Jahr über die Vegetation aufrechterhält und mit sehr großen,
+                        dunkelgrünen Blättern schmückt, die eine Länge von bis zu 90 cm erreichen können?
+                        Dann brauchen Sie Monstera!
+                </p>
+                <?php include "../../../includes/product-form.php" ?>
+            </div>
+        </div>
+        <div class="plant-needs">
+            <p class="plant-needs__title">
              Was braucht deine Monstera deliciosa?
             </p>
     
@@ -53,11 +59,13 @@
                 </li>
 
             </ol>
-            <?php include "../../../includes/empfohlene-produkte.php"?>
+        </div>
+    </div>
+            <?php include "../../../includes/recommendation.php"?>
             <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>

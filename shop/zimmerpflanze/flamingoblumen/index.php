@@ -3,45 +3,53 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../../includes/header.php" ?>
-
         <main>
+        <div class="product">
+            <div class="product-card">
+                <div class="product-card__container">
+                    <img class="product-card__container-img"src="flamingoblumen/img/planta5.jpg"  alt="Flamingoblumen">
             
-            <img src="flamingoblumen/img/planta5.jpg" width="350px" alt="Flamingoblumen">
+                </div>
+                <div class="product-card__container">
+                    <h1 class="product-card__container-name">
+                        Flamingoblumen <button class="zu-wissen"> 35€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                    </h1> 
+                    <p class="product-card__container-text"> Du suchst was fürs Herz? Dann bist du bei unserer Herzblattblume genau richtig. 
+                        Grund dafür sind ihre wunderschönen herzförmigen Blätter, die einfach jedes Herz zum Schmelzen bringen!
+                    </p>
+                    <form>
+                        <label>
+                            Größe
+                        </label>
+                        
+                        <select class="size" >
+                            <option  value="Klein">Klein</option>
+                            <option  value="Mittel">Mittel</option>
+                        </select>
 
-            <h1>
-            Flamingoblumen 
-            </h1>
-            <p> Du suchst was fürs Herz? Dann bist du bei unserer Herzblattblume genau richtig. 
-                Grund dafür sind ihre wunderschönen herzförmigen Blätter, die einfach jedes Herz zum Schmelzen bringen!
-            </p>
-            <form>
-                <label>
-                    Größe
-                </label>
-                
-                <select>
-                    <option value="small">Klein</option>
-                    <option value="medium">Mittel</option>
-                </select>
+                        <label>
+                            Stück
+                        </label>
 
-                <label>
-                    Stück
-                </label>
-
-                <input type="number">
-
-                <button>
-                    In den Warenkorb
-                </button>
-                <button>
-                    Love it!
-                </button>
-            </form>
-
-            <p>
+                        <input id="stuck"type="number" name="stuck" min="1" max="10" value="">
+                        <div class="product-form__button">
+                        <button class="favorit" data-name="Flamingoblumen" data-price="35€">
+                                Love it!
+                            </button>
+                            <button class="corb" data-name="Flamingoblumen" data-price="35€">
+                                In den Warenkorb
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="plant-needs">
+            <p class="plant-needs__title">
             Was braucht deine Flaingoblume?
             </p>
     
@@ -71,13 +79,13 @@
                     <strong>Keine teure Frisur  </strong>
                     Rückschnitt ist nicht notwendig.   
                 </li>
-
             </ol>
-            <?php include "../../../includes/empfohlene-produkte.php"?>
+        </div>
+        </div>
+            <?php include "../../../includes/recommendation.php"?>
             <?php include "../../../includes/reise.php"?>
         </main>
-
         <?php include "../../../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>

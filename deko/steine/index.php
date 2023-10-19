@@ -3,13 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../includes/header.php" ?>
 
         <main>
-        <img src="steine/img/steine.jpg" width="350px" alt="Steine ">
-            <h1>
+        <div class="product">
+        <div class="product-card">
+            <div class="product-card__container">
+                <img src="steine/img/steine.jpg" width="350px" alt="Steine ">
+            </div>
+            <div class="product-card__container">
+                <h1>
                 Steine
             </h1>
             <p>  Nutze die Mamorkiessteine in Deinem Garten zur Umrandung von Beeten,
@@ -33,11 +40,15 @@
                     Zum Warenkorb hinzufügen
                 </button>
             </form>
+            </div>
+        </div>
+    </div>
+
             <?php include "../../includes/reise.php"?>
         </main>
 
         <?php include "../../includes/footer.php" ?>
 
-
+</div>
     </body>
 </html>

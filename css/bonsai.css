@@ -1,0 +1,88 @@
+.product{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5%;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-second);
+    padding-bottom: 10%;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-card__container {
+    list-style-type: none;
+    width: 45%;
+    position:relative;
+}
+
+.product-card__container-img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 10%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(42, 194, 148, 0.1);
+    cursor: zoom-in;
+}
+.product-card__container-img.zoomed {
+    transform: scale(1.1);
+}
+.product-card__container-name{
+    padding-top: 15%;
+    padding-left: 50%;
+    font-size: var(--size-xl);
+    color: var(--color-primary);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.zu-wissen {
+    position: relative;
+    border: 1px solid var(--color-primary__dark);
+    padding: 3%;
+}
+
+.zu-wissen__tip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    color: var(--color-second);
+    background-color: rgb(184, 48, 7);
+    border-radius: 5%;
+    box-shadow: 0 4px 8px  var(--color-second__dark);
+    padding: 3%;
+}
+
+.zu-wissen:hover {
+    border-color: rgb(190, 130, 0);
+    background-color: var(--color-primary__dark);
+}
+
+.zu-wissen:focus .zu-wissen__tip,
+.zu-wissen:hover .zu-wissen__tip {
+    display: inline;
+}
+
+.product-card__container-text {
+    font-size: var(--size-sm);
+    padding-top: 2%;
+    text-align: center;
+    color: var(--color-second__dark);
+    padding-left: 25%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+@media  (max-width:1200px){
+.product-card__container-name{
+    font-size:var(--size-sm);
+}
+.product-card__container-text{
+    font-size: var(--size-xs);
+}
+}
+
+

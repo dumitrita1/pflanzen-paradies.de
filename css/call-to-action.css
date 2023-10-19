@@ -1,5 +1,5 @@
 .call-to-action,
-.call-to-action .button {
+.call-to-action__button{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,27 +8,44 @@
 }
 
 .call-to-action {
-    min-height: 600px;
-    padding: 60px;
-    background-color: #ede4d3;
+    min-height: 25rem;
+
     background-image: url("/img/plants.jpg");
     background-size: cover;
-    background-position: 35% 55%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
-.call-to-action p {
-    color: #eeede9;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-}
-
-
-.call-to-action .button {
-    width: 120px;
-    height: 120px;
+.call-to-action__button{
+    width: 9.375rem;
+    height: 3.125rem;
     color: #fff;
-    border-radius: 50%;
-    background-color: #2A5041;
+    border-left: 1rem solid;
+    background-color: var(--color-primary);
     text-decoration: none;
     font-weight: bold;
+    transition: 1s;
+    border-left-width: 0.4375rem;
+    box-shadow: 0px 3px 1px #c3c3c3;
+
+}
+.call-to-action__button:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    background-color: var(--color-primary);
+    border: solid black;
+    color:var(--color-primary__dark);
+    box-shadow: 0px 3px 1px #000000;
+}
+@media  (max-width:1100px){
+    .call-to-action{
+        width: 100%;
+        height: auto;
+        background-size:contain;
+        background-position: 80% 20%;
+    }
+    .call-to-action__button{
+        width: 7.375rem;
+        height: 2.125rem;
+    }
 }

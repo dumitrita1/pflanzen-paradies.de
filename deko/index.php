@@ -3,41 +3,48 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../includes/meta.php" ?>
     </head>
     <body>
+        <div class="document">
         <?php include "../includes/header.php" ?>
 
         <main>
-            <h1>
-            Die schönsten Dekorationen für Ihre Pflanzen
+            <h1 class=text>
+                Die schönsten Dekorationen für Ihre Pflanzen
             </h1>
-            <ul>
-                <li><a href="/deko/trockenen-blumen">
-                    <img src="/deko/img/blumen1.jpg" width="100px" alt="Getrocknete Pflanze mit Tannenzapfen">
-                    <img src="/deko/img/blumen2.jpg" width="100px" alt="Getrocknete gelbe Blüten">
-                    <img src="/deko/img/blumen3.jpg" width="100px" alt="Silberne Blätter mit Trockenfrüchten">
-                    Trockenen blumen
-                </li>
-                <li><a href="/deko/blumentopf">
-                    <img src="/deko/img/topf.jpg" width="100px" alt="Blumentopf">
-                    Blumentopf
-                </li>
-                <li><a href="/deko/keramikvase">
-                    <img src="/deko/img/vase.jpg" width="100px" alt="handgefertigte Keramikvase">
-    
-                    Keramikvase
-                </li>
-                <li><a href="/deko/steine">
-                    <img src="/deko/img/steine.jpg" width="100px" alt="Mehrfarbige Steine">
-                    Mehrfarbige Steine
-                </li>
-            </ul>
-            <?php include "../includes/empfohlene-produkte.php"?>
-            </ul>
+            <p class="text">〰️〰️</p>
+            <div class=deko-shop>
+                    <div class="deko-shop__produs">
+                        <a href ="/deko/trockenen-blumen">
+                            <img src="/deko/img/blumen3.jpg" alt="Getrocknete Pflanze mit Tannenzapfen">
+                            <p class="shop-list__link-text">Getrocknete Pflanze</p>
+                        </a>
+                    </div>
+                    <div class="deko-shop__produs">
+                        <a href="/deko/blumentopf">
+                            <img src="/deko/img/topf.jpg"  alt="Blumentopf">
+                            <p class="shop-list__link-text">Blumentopf</p>
+                        </a>
+                    </div>
+                    <div class="deko-shop__produs">
+                        <a href="/deko/keramikvase">
+                            <img src="/deko/img/vase.jpg"  alt="handgefertigte Keramikvase">
+                            <p class="shop-list__link-text">Keramikvase</p>
+                        </a>
+                    </div>
+                    <div class="deko-shop__produs">
+                        <a href="/deko/steine">
+                            <img src="/deko/img/steine.jpg"  alt="Mehrfarbige Steine">
+                            <p class="shop-list__link-text">Mehrfarbige Steine</p>
+                        </a>
+                    </div>
+            </div>
+            <?php include "../includes/recommendation.php"?>
             <?php include "../includes/reise.php"?>
         </main>
 
         <?php include "../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>

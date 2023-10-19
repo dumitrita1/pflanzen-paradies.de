@@ -3,46 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../../includes/header.php" ?>
 
         <main>
-        <img src="magnolia/img/magnolia.jpg" width="350px" alt="Magnolia">
-            <h1>
-                Magnolia
-            </h1>
-            <p> Dieser duftende Bonsai ist wirklich außergewöhnlich.
-                 Er ist auch bekannt unter dem Namen Chinesischer Pfeffer(Zanthoxylum). 
-                 Er kann drinnen und draußen hingestellt werden und eignet sich sehr gut für beginnende Bonsailiebhaber. 
-                Die Blätter sind glänzend grün und verströmen ein zartes Zitrusaroma, wenn man daran reibt. 
-            </p>
-            <form>
-                <label>
-                    Größe
-                </label>
-                
-                <select>
-                    <option value="medium">Mittel</option>
-                    <option value="large" selected>Groß</option>
-                </select>
-
-                <label>
-                    Stück
-                </label>
-
-                <input type="number" >
-
-                <button>
-                    Zum Warenkorb hinzufügen
-                </button>
-            </form>
-            
-            <?php include "../../../includes/empfohlene-produkte.php"?>
+        <div class="product">
+        <div class="product-card">
+            <div class="product-card__container">
+                <img class="product-card__container-img"src="magnolia/img/magnolia.jpg"alt="Magnolia">
+              
+            </div>
+            <div class="product-card__container">
+                <h1 class="product-card__container-name">
+                Magnolia <button class="zu-wissen"> 25€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                </h1> 
+                <p class="product-card__container-text"> Dieser duftende Bonsai ist wirklich außergewöhnlich.
+                    Er ist auch bekannt unter dem Namen Chinesischer Pfeffer(Zanthoxylum). 
+                    Er kann drinnen und draußen hingestellt werden und eignet sich sehr gut für beginnende Bonsailiebhaber. 
+                    Die Blätter sind glänzend grün und verströmen ein zartes Zitrusaroma, wenn man daran reibt. 
+                </p>
+            <?php include "../../../includes/product-form.php" ?>
+            </div>
+        </div>
+        </div>
+        <?php include "../../../includes/recommendation.php"?>
             <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>

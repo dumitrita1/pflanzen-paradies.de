@@ -12,10 +12,13 @@
     <label>
         Stück
     </label>
-
-    <input type="number" >
-
-    <button>
+       <input type="number" min="1" max="10">
+    <div class="product-form__button">
+        <button class="favoriten" data-name="">
+        Love it!
+        </button>
+        <button>
         Zum Warenkorb hinzufügen
-    </button>
+        </button>
+    </div>
 </form>

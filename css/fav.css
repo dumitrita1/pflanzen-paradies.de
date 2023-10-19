@@ -1,0 +1,8 @@
+.favorit-list li {
+    display: flex;
+    list-style: none;
+    gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}

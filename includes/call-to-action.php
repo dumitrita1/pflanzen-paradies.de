@@ -1,8 +1,5 @@
 <div class="call-to-action">
-
-    <p>
-        <a href="/shop" class="button">
-            Shop NOW
-        </a>
-    </p>
+    <a href="/shop" class="call-to-action__button">
+        Shop NOW
+    </a>
 </div>

@@ -1,25 +1,16 @@
-.textperssonal {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: darkgreen;
-    font-size: 25px;
-    font-weight: bold;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-}
+
 
 ul.perssonal {
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 50px; 
-    padding: 20px 0;
-
+    padding: 20px ;
 }
 
 .flip-card {
-    width: 260px;  
-    height: 260px;
+    width: var(--card-size, 16.25rem);  
+    height: var(--card-size, 16.25rem);
 }
 
 .flip-card__inner {
@@ -27,7 +18,7 @@ ul.perssonal {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.9s;
+    transition: transform 1s;
 }
 
 .flip-card:hover .flip-card__inner {
@@ -55,15 +46,26 @@ ul.perssonal {
 }
 
 .flip-card__back {
-    background-color: #2a583d;
+    background-color: var(--color-primary__dark);
     border: solid black;
     border-radius: 10%;
-    color: #e8d0ac;
+    color: var(--accent-color);
     transform: rotateY(180deg);
 }
 
 .flip-card__back strong {
     padding: 20px;
-    font-size: 18px;
+    font-size: var(--size-md);
     display: block;
+}
+@media (max-width:1100px) {
+    ul.perssonal{
+        padding-left:2px;
+        gap:10px
+    }
+    .flip-card__back{
+        flex-direction: column;
+        font-size: var(--size-xs);
+        text-align: center;
+    }
 }

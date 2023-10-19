@@ -1,8 +1,24 @@
+@import url("tokens.css");
 @import url("site-header.css");
 @import url("call-to-action.css");
 @import url("flip-card.css");
 @import url("footer.css");
 @import url("header.css");
+@import url("recommendation.css");
+@import url("advantages.css");
+@import url("reise.css");
+@import url("post-card.css");
+@import url("bonsai.css");
+@import url("shop.css");
+@import url("product-form.css");
+@import url("shop-filter.css");
+@import url("plant-needs.css");
+@import url("deko.css");
+@import url("lernen.css");
+@import url("dropdown.css");
+@import url("ueber-uns.css");
+@import url("search.css");
+@import url("fav.css");
 
 * {
     margin: 0;
@@ -10,130 +26,69 @@
     box-sizing: border-box;
 
 }
+
 body {
     font-family: sans-serif;
     min-height: 100vh;
-    max-width: 1200px;
+    max-width: 80rem;
     margin: 0 auto;
-    
 }
 .document {
-    background-image: url('/img/footer.jpg');
-    background-size: 70% auto;
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background-color: var(--background-color);
 }
 
-
-.text {
-    text-align: center;
-    padding-top: 15px;
-    color: darkgreen;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-}
-.recommendations {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.recommendations li {
-    flex: 1;
-    width: 50%;
-    height: 50%;
-    box-sizing: border-box;
-}
-.recommendations a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-}
-
-.recommendations img {
-    max-width: 100%;
-    height: auto;
-}
-.recommendations img:first-child {
-    height: 257px;
-    width: 237px ;
-}
-.recommendations li:last-child {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 100px;
-}
-
- .miniplant {
-    background-image: url(/img/plantutamicuta.jpg);
-    background-repeat: no-repeat;
-    padding-top: 35px;
-    background-size: contain;
-    background-position:center;
-}
- .first-column li {
-    list-style: none;
-    padding-top: 20px;
-    padding-left: 300px;;
-    color: rgb(18, 50, 18);
-    font-size: 25px;
-    font-weight: bold;
- } 
- .second-column li {
-    list-style: none;
-    text-align:end;
-    padding-right: 300px;
-    padding-bottom: 25px;
-    color: rgb(18, 50, 18);
-    font-size: 25px;
-    font-weight: bold;
- }
  .text {
     text-align: center;
-    padding-top: 15px;
-    color: darkgreen;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    padding-top: 0.625rem;
+    font-size: var(--size-xl);
+    color: var(--color-primary__dark);
+    font-weight: bold;
+    
  }
  
  .text-reise {
     text-align: center;
-    padding-top: 20px;
-    color: rgb(9, 9, 9);
-    font-size: 25px;
+    padding-top: 3.125rem;
+    color:var(--color-second__dark);
+    font-size: var(--size-xl);
     font-weight: bold;
-    background-color: hsl(34, 78%, 91%, 0.37);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: hsla(33, 65%, 74%, 0.37);
  }
- .reise {
-    padding-top: 20px;
-    padding-left: 30px;
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    background-color: hsl(34, 78%, 91%, 0.37);
-    gap: 10rem;
-}
+ .shop-description, .shop-description__name{
+        text-align: center;
+        padding-top: 3%;
+    }
+    .shop-description{
+        color: var(--color-second__dark);
+        font-size:var(--size-lg);
 
-.reise li {
-    flex: 1;
-    width: 50%;
-    height: 50%;
-    box-sizing: border-box;
-}
-.reise a {
-    display:block;
-    text-decoration: none;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    padding:40px;
-    
-}
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+.shop-description__name{
+        color: var(--color-primary);
+    }
+ @media (max-width:1100px) {
+    .text{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: var(--size-lg);
+    }
+    .text-reise{
+        font-size: var(--size-lg);
+        padding-top:1.5625rem;
+    }
+ }
 
-.reise img {
-   width: 60px;
-    height: auto;
-}
+ @media (prefers-color-scheme: dark) {
+    :root {
+        background-color: black;
+        --background-color:#283618;
+        --color-primary: #dda15e;
+        --color-second__dark: #fefae0;
+        --color-primary__dark: #bc6c25;
+        --accent-color:#fefae0;
+        --color-second: #fefae0;
 
+    }
+}

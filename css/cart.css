@@ -1,0 +1,7 @@
+.cart-button.opened{
+    display: flex;
+
+}
+.cart-button button.opened{
+    background-color: black;
+}

@@ -4,28 +4,28 @@
             </p>
         </div>
     
-        <ul class="reise">
-            <li>
-                 <a>
-                    <img src="/img/planta-icon.svg" alt="Plant">
+        <ul class="trip-plant">
+            <li class="trip-plant__list">
+                 <a class="trip-plant__list-text">
+                    <img class="trip-plant__list-img"src="/img/planta-icon.svg" alt="Plant">
                     Pflanze finden
                 </a>
              </li>
-             <li>
-                 <a>
-                    <img src="/img/card.svg" alt="Visa">
+             <li class="trip-plant__list">
+                 <a class="trip-plant__list-text">
+                    <img class="trip-plant__list-img"src="/img/card.svg" alt="Visa">
                     Bestellen
                 </a>
-             </li>
-             <li>
-                 <a>
-                    <img src="/img/auto.svg" alt="Auto">
+             </li >
+             <li class="trip-plant__list">
+                 <a class="trip-plant__list-text">
+                    <img class="trip-plant__list-img"src="/img/auto.svg" alt="Auto">
                     Lieferung nach Hause
                 </a>
              </li>
-             <li>
-                 <a>
-                    <img src="/img/glass.svg" alt="Stressfrei">
+             <li class="trip-plant__list">
+                 <a class="trip-plant__list-text">
+                    <img class="trip-plant__list-img" src="/img/glass.svg" alt="Stressfrei">
                     Stressfrei genießen
                 </a>
              </li>

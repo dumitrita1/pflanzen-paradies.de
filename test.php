@@ -6,39 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .grid {
+            display: flex;
+           /* flex-direction: column; /* standard row */
+            flex-wrap: wrap; /* standard nowrap */
+        }
+
+        .box {
+            flex-grow: 1; /* standard 0 */
+            flex-shrink: 1; /* standard 1 */
+            flex-basis: auto; /* standard auto */
+
+            border: 1px solid brown;
+            background: lightyellow;
+        }
+
+        @media (min-width: 600px) {
+            .box {
+                flex-basis: 50%;
+            }
+
+                border: 10px red;
+            }
     </style>
 </head>
 <body>
-    <header class="site-header">
-        <a href="/" class="site-header__logo">
-            Unternehmen
-        </a>
-
-        <nav class="site-header__navigation">
-            <a href="/ueber-uns">
-                Über uns
-            </a>
-            <a href="/blog">
-                Blog
-            </a>
-            <a href="/shop">
-                Shop
-            </a>
-            <a href="/kontakt">
-                Kontakt
-            </a>
-        </nav>
-    </header>
-
     <div class="grid">
-        <div class="box box--dark">
-            First
+        <div class="box box--xlarge">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae earum at rem, quas ea temporibus voluptatum repellat amet quos praesentium, dignissimos est obcaecati animi ut? Labore distinctio vel facilis.
         </div>
-        <div class="box">
-            Second
+        <div class="box box--small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae earum at rem, quas ea temporibus voluptatum repellat amet quos praesentium, dignissimos est obcaecati animi ut? Labore distinctio vel facilis.
         </div>
-        <div class="box box--dark">
-            Third
+        <div class="box box--small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus incidunt modi temporibus qui fugiat eligendi eos sint praesentium sunt quaerat tempore corporis mollitia voluptatem unde libero facere, quidem ad?
+        </div>
+        <div class="box box--small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odio excepturi iure dicta temporibus, neque tempore aperiam. Mollitia id unde cum laudantium eveniet tempore commodi reprehenderit adipisci, iusto non voluptatum.
+        </div>
+        <div class="box box--large">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odio excepturi iure dicta temporibus, neque tempore aperiam. Mollitia id unde cum laudantium eveniet tempore commodi reprehenderit adipisci, iusto non voluptatum.
+        </div>
+        <div class="box box--large">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odio excepturi iure dicta temporibus, neque tempore aperiam. Mollitia id unde cum laudantium eveniet tempore commodi reprehenderit adipisci, iusto non voluptatum.
         </div>
     </div>
 </body>

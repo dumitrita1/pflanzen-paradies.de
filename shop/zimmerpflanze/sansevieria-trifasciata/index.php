@@ -3,23 +3,27 @@
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
+        <?php include "../../../includes/meta.php" ?>
     </head>
     <body>
+    <div class="document">
         <?php include "../../../includes/header.php" ?>
-
         <main>
-            
-            <img src="sansevieria-trifasciata/img/planta10.jpg" width="350px" alt="Sansevieria Cylindrica">
-
-            <h1>
-            Sansevieria cylindrica
-            </h1>
-            <p> Ihn bekommt so schnell nichts unter - egal ob hell oder dunkel - deine Sansevieria ist sich für keinen
-                 Platz zu schade! Ok, ein fensterloses Zimmer findet auch die Sansevieria nicht gut, 
-                 aber sie ist erstaunlich zäh und kämpft sich mit ihren harten, 
-                 sukkulenten Blättern durch jeden Zimmerdschungel - garantiert auch durch Deinen!
-            </p>
-            <form>
+        <div class="product">
+        <div class="product-card">
+            <div class="product-card__container">
+                <img class="product-card__container-img"src="sansevieria-trifasciata/img/planta10.jpg"alt="Sansevieria Cylindrica">
+        </div>
+            <div class="product-card__container">
+            <h1 class="product-card__container-name">
+                 Sansevieria cylindrica <button class="zu-wissen"> 20€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                </h1>
+                <p class="product-card__container-text"> Ihn bekommt so schnell nichts unter - egal ob hell oder dunkel - deine Sansevieria ist sich für keinen
+                     Platz zu schade! Ok, ein fensterloses Zimmer findet auch die Sansevieria nicht gut, 
+                     aber sie ist erstaunlich zäh und kämpft sich mit ihren harten, 
+                     sukkulenten Blättern durch jeden Zimmerdschungel - garantiert auch durch Deinen!
+                </p>
+                <form>
                 <label>
                     Größe
                 </label>
@@ -34,16 +38,19 @@
                 </label>
 
                 <input type="number">
-
-                <button>
-                    In den Warenkorb
-                </button>
-                <button>
-                    Love it!
-                </button>
+                <div class="product-form__button">
+                    <button>
+                        Love it!
+                    </button>
+                    <button>
+                        In den Warenkorb
+                    </button>
+                </div>
             </form>
-
-            <p>
+        </div>
+        </div>
+        <div class="plant-needs">
+            <p class="plant-needs__title">
             Was braucht dein Bogenhanf cylindrica 'Straight'?
             </p>
     
@@ -73,11 +80,13 @@
                     Braune/vertrocknete Blätter können einzeln entfernt werden.   
                 </li>
             </ol>
-            <?php include "../../../includes/empfohlene-produkte.php"?>
+        </div>
+        </div>
+            <?php include "../../../includes/recommendation.php"?>
             <?php include "../../../includes/reise.php"?>
         </main>
 
         <?php include "../../../includes/footer.php" ?>
-
+    </div>
     </body>
 </html>
