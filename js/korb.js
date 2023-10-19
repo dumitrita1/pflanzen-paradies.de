@@ -45,10 +45,10 @@ if (!cartPage.classList.contains('js-processed')) {
             btn.addEventListener('click', function () {
                 removeCart(produkt_name);
             });
-
+            newProductCart.appendChild(newProductPrice);
             newProductCart.appendChild(btn);
             cartList.appendChild(newProductCart);
-            newProductCart.appendChild(newProductPrice);
+            
     
         }
     }

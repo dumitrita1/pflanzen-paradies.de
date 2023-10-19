@@ -23,14 +23,24 @@
                     </p>
                     <form>
                         <label>
+                            Größe
+                        </label>
+                        
+                        <select class="size" >
+                            <option  value="Klein">Klein</option>
+                            <option  value="Mittel">Mittel</option>
+                        </select>
+
+                        <label>
                             Stück
                         </label>
-                        <input type="number">
+
+                        <input id="stuck"type="number" name="stuck" min="1" max="10" value="">
                         <div class="product-form__button">
-                        <button class="favorit" data-name="Aloe">
+                        <button class="favorit" data-name="Aloe" data-price="25€">
                                 Love it!
                             </button>
-                            <button class="corb">
+                            <button class="corb" data-name="Aloe" data-price="25€">
                                 In den Warenkorb
                             </button>
                         </div>
