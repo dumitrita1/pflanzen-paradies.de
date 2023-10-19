@@ -1,8 +1,16 @@
+.favoritText {
+    border-bottom: solid rgb(240 240 240);
+    text-align: center;
+}
 .favorit-list li {
     display: flex;
     list-style: none;
     gap: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
+    color: var(--color-second__dark);
+    border-bottom: solid rgb(240 240 240);
 
+}
+#favoritPage button{
 }

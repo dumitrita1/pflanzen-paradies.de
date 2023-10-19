@@ -2,21 +2,18 @@
     margin-top: 3%;
     display: none;
     position: absolute;
-    left: 75%;
+    left: 65%;
     border-radius: 5%;
-    color: var(--color-second);
+    color: var(--color-second__dark);
     box-shadow: 0 4px 8px var(--color-second__dark);
     padding: 3%;
+    background-color: white;
      
 }
 
 .nav__dropdown.opened {
     display: block;
     align-items: center;
-    min-height: 10rem;
-    background-color:rgb(199 178 135);
-    background-image:url("/img/drop-down.png");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    min-height: 20rem;
+    min-width: 20rem;
 }

@@ -25,30 +25,30 @@
                     Ein echter Paradiesvogel eben!
                 </p>
                 <form>
-                <label>
-                    Größe
-                </label>
-                
-                <select>
-                    <option value="small">Klein</option>
-                    <option value="medium">Mittel</option>
-                </select>
+                        <label>
+                            Größe
+                        </label>
+                        
+                        <select class="size" >
+                            <option  value="Klein">Klein</option>
+                            <option  value="Mittel">Mittel</option>
+                            <option  value="Groß">Groß</option>
+                        </select>
 
-                <label>
-                    Stück
-                </label>
+                        <label>
+                            Stück
+                        </label>
 
-                <input type="number">
-                <div class="product-form__button">
-                 
-                <button class="favorit" data-name="Strelizia">
-                        Love it!
-                    </button>
-                    <button>
-                        In den Warenkorb
-                    </button>
-                </div>
-            </form>
+                        <input id="stuck"type="number" name="stuck" min="1" max="10" value="">
+                        <div class="product-form__button">
+                        <button class="favorit" data-name="Strelitzia" data-price="25€">
+                                Love it!
+                            </button>
+                            <button class="corb" data-name="Strelitzia" data-price="25€">
+                                In den Warenkorb
+                            </button>
+                        </div>
+                    </form>
             </div>
         </div>
         <div class="plant-needs">

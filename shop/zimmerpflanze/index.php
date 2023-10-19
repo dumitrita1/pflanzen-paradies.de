@@ -53,7 +53,7 @@
                 <a href="/shop/zimmerpflanze/gronskan">
                     <img src="/shop/img/planta6.jpg" width="100px" alt="Grönskan">
     
-                   Grönskan  20€
+                   Aloe  20€
                 </li>
                 <li>
                 <a href="/shop/zimmerpflanze/areca-palme">

@@ -1,8 +1,21 @@
-
-.cart-button.opened{
+.warenkorb{
+    border-bottom: solid rgb(240 240 240);
+    text-align: center;
+}
+.cart-list {
+   list-style: none;
+   padding-top: 5%;
+   border-bottom: solid rgb(240 240 240);
+}
+.cart-list li {
     display: flex;
+    gap: 5%;
+    
+}
 
+.cart-button {
+    padding-top: 5%;
+    display: flex;
+    gap: 15%;
 }
-.cart-button button.opened{
-    background-color: black;
-}
+

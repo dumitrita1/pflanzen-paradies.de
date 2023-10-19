@@ -1,5 +1,5 @@
 <div id = "cartPage"class="nav__dropdown">
-    <h2>Warenkorb</h2>
+    <h2 class="warenkorb">Warenkorb</h2>
     <ul class="cart-list">
        
     </ul>

@@ -26,16 +26,16 @@ if (!cartPage.classList.contains('js-processed')) {
             let newText = document.createTextNode(produkt_name);
             newProductCart.appendChild(newText);
 
-            let newProductPrice = document.createElement("p");
+            let newProductPrice = document.createElement("li");
             let newPrice = document.createTextNode(cartItems[produkt_name].price); 
             newProductPrice.appendChild(newPrice);
 
-            let newProductSize = document.createElement("p");
+            let newProductSize = document.createElement("li");
             let newSizeP = document.createTextNode(cartItems[produkt_name].size);
             newProductSize.appendChild(newSizeP);
             newProductCart.appendChild(newProductSize);
 
-            let newProductStuck = document.createElement("p");
+            let newProductStuck = document.createElement("li");
             let newStuckP = document.createTextNode(cartItems[produkt_name].stuck);
             newProductStuck.appendChild(newStuckP);
             console.log("add" + newStuckP)
