@@ -31,12 +31,12 @@ if (!cartPage.classList.contains('js-processed')) {
             newProductPrice.appendChild(newPrice);
 
             let newProductSize = document.createElement("p");
-            let newSizeP = document.createTextObject(cartItems[produkt_name].size);
+            let newSizeP = document.createTextNode(cartItems[produkt_name].size);
             newProductSize.appendChild(newSizeP);
             newProductCart.appendChild(newProductSize);
 
             let newProductStuck = document.createElement("p");
-            let newStuckP = document.createTextObject(cartItems[produkt_name].stuck); 
+            let newStuckP = document.createTextNode(cartItems[produkt_name].stuck);
             newProductStuck.appendChild(newStuckP);
             console.log("add" + newStuckP)
 
