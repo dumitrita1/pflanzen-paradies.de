@@ -26,26 +26,23 @@ if (!cartPage.classList.contains('js-processed')) {
             let newText = document.createTextNode(produkt_name);
             newProductCart.appendChild(newText);
 
-            let newProductPrice = document.createElement("li");
+            let newPriceTag = document.createElement('span');
             let newPrice = document.createTextNode(cartItems[produkt_name].price); 
-            newProductPrice.appendChild(newPrice);
+            newPriceTag.appendChild(newPrice);
+            newProductCart.appendChild(newPriceTag);
 
-            let newProductSize = document.createElement("li");
             let newSizeP = document.createTextNode(cartItems[produkt_name].size);
-            newProductSize.appendChild(newSizeP);
-            newProductCart.appendChild(newProductSize);
+            newProductCart.appendChild(newSizeP);
 
-            let newProductStuck = document.createElement("li");
             let newStuckP = document.createTextNode(cartItems[produkt_name].stuck);
-            newProductStuck.appendChild(newStuckP);
-            console.log("add" + newStuckP)
+            newProductCart.appendChild(newStuckP);
 
             let btn = document.createElement("button");
             btn.innerHTML = "X";
             btn.addEventListener('click', function () {
                 removeCart(produkt_name);
             });
-            newProductCart.appendChild(newProductPrice);
+
             newProductCart.appendChild(btn);
             cartList.appendChild(newProductCart);
             
