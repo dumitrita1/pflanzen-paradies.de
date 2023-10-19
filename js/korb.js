@@ -55,7 +55,8 @@ if (!cartPage.classList.contains('js-processed')) {
 
     function addProductCorb(name, price, size, stuck) {
 
-        let cartDB = JSON.parse(window.localStorage.getItem("producten")) ; 
+        let cartDB= {};
+         cartDB= JSON.parse(window.localStorage.getItem("producten")) ; 
         
         if (cartDB == null){
             cartDB = {};
