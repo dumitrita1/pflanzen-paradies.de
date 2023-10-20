@@ -1,6 +1,9 @@
 var namePlants = document.querySelector('.corb');
 let newSize = document.querySelector('.size');
-var valueSize = newSize.value;
+if(newSize !== null){
+    var valueSize = newSize.value;
+}
+
 let newStuck = document.getElementById('stuck');
 var cartPage = document.getElementById('cartPage');
 var cartList = document.querySelector('.cart-list');
@@ -98,8 +101,9 @@ if (!cartPage.classList.contains('js-processed')) {
         console.log(stuck)
         addProductCorb(name, price, size, stuck);
     }
-
+if (namePlants !==null){
     for (let i = 0; i < namePlants.length; i++) {
+    
         const namePlant = namePlants[i];
         namePlant.addEventListener('click', handleButtonCartClick);
         
@@ -108,3 +112,5 @@ if (!cartPage.classList.contains('js-processed')) {
     cartPage.classList.add("js-processed");
 
 }
+}
+   

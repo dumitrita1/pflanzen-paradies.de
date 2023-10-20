@@ -9,6 +9,7 @@ function handleClick() {
        zoomInImg.classList.add('zoomed');
     }
 }
-
- zoomInImg.addEventListener('click', handleClick);
+if (zoomInImg!==null ){
+   zoomInImg.addEventListener('click', handleClick);
+}
 

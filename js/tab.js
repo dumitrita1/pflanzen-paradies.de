@@ -42,7 +42,11 @@ buttonPflanzen.addEventListener('click', handlePflanzenButtonClick);
    keinPlan.classList.remove('active');
    buttonKeinPlan.classList.remove('active');
  }
- buttonPflanzen.addEventListener('click', handlePflanzenButtonClick);
+ if (buttonPflanzen !==null){
+
+  buttonPflanzen.addEventListener('click', handlePflanzenButtonClick);
+ }
+
 
  function handleKeinPlanButtonClick() {
    pflanzenBuddy.classList.remove('active');
@@ -50,4 +54,7 @@ buttonPflanzen.addEventListener('click', handlePflanzenButtonClick);
    keinPlan.classList.add('active');
    buttonKeinPlan.classList.add('active');
  }
- buttonKeinPlan.addEventListener('click', handleKeinPlanButtonClick);
+ if(buttonKeinPlan !==null){
+  buttonKeinPlan.addEventListener('click', handleKeinPlanButtonClick);
+ }
+
