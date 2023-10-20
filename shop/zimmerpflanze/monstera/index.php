@@ -22,7 +22,30 @@
                         dunkelgrünen Blättern schmückt, die eine Länge von bis zu 90 cm erreichen können?
                         Dann brauchen Sie Monstera!
                 </p>
-                <?php include "../../../includes/product-form.php" ?>
+                <form>
+                        <label>
+                            Größe
+                        </label>
+                        <select class="size" >
+                            <option  value="Klein">Klein</option>
+                            <option  value="Mittel">Mittel</option>
+                            <option value ="groß"> Groß</option>
+                        </select>
+
+                        <label>
+                            Stück
+                        </label>
+
+                        <input id="stuck"type="number" name="stuck" min="1" max="10" value="">
+                        <div class="product-form__button">
+                        <button class="favorit" data-name="Monstera" data-price="70€">
+                                Love it!
+                            </button>
+                            <button class="corb" data-name="Monstera" data-price="70€">
+                                In den Warenkorb
+                            </button>
+                        </div>
+                    </form>
             </div>
         </div>
         <div class="plant-needs">

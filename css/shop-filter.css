@@ -36,4 +36,8 @@
     background-color: var(--color-second);;
 }
 
+filter-form__option.active{
+
+}
+
 

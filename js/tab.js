@@ -1,4 +1,4 @@
-var tabs = Array.from(document.querySelectorAll('.tab'));
+/*var tabs = Array.from(document.querySelectorAll('.tab'));
 var panels = Array.from(document.querySelectorAll('.tab-panel'));
 
 function handleTabClick(event) {
@@ -18,25 +18,36 @@ for (var i = 0; i < tabs.length; i++) {
   var tab = tabs[i];
   tab.addEventListener('click', handleTabClick);
 }
+var buttonKeinPlan = document.querySelector('#button-keinPlan');
+ var keinPlan = document.querySelector('#kein-plan');
 
-// var buttonPflanzen = document.querySelector('#button-pflanzen');
-// var buttonKeinPlan = document.querySelector('#button-keinPlan');
+ function handlePflanzenButtonClick() {
+   pflanzenBuddy.classList.add('active');
+   buttonPflanzen.classList.add('active');
+   keinPlan.classList.remove('active');
+buttonKeinPlan.classList.remove('active');
+}
+buttonPflanzen.addEventListener('click', handlePflanzenButtonClick);
+*/
 
-// var pflanzenBuddy = document.querySelector('#pflanzen-buddy');
-// var keinPlan = document.querySelector('#kein-plan');
+ var buttonPflanzen = document.querySelector('#button-pflanzen');
+ var buttonKeinPlan = document.querySelector('#button-keinPlan');
 
-// function handlePflanzenButtonClick() {
-//   pflanzenBuddy.classList.add('active');
-//   buttonPflanzen.classList.add('active');
-//   keinPlan.classList.remove('active');
-//   buttonKeinPlan.classList.remove('active');
-// }
-// buttonPflanzen.addEventListener('click', handlePflanzenButtonClick);
+ var pflanzenBuddy = document.querySelector('#pflanzen-buddy');
+ var keinPlan = document.querySelector('#kein-plan');
 
-// function handleKeinPlanButtonClick() {
-//   pflanzenBuddy.classList.remove('active');
-//   buttonPflanzen.classList.remove('active');
-//   keinPlan.classList.add('active');
-//   buttonKeinPlan.classList.add('active');
-// }
-// buttonKeinPlan.addEventListener('click', handleKeinPlanButtonClick);
+ function handlePflanzenButtonClick() {
+   pflanzenBuddy.classList.add('active');
+   buttonPflanzen.classList.add('active');
+   keinPlan.classList.remove('active');
+   buttonKeinPlan.classList.remove('active');
+ }
+ buttonPflanzen.addEventListener('click', handlePflanzenButtonClick);
+
+ function handleKeinPlanButtonClick() {
+   pflanzenBuddy.classList.remove('active');
+   buttonPflanzen.classList.remove('active');
+   keinPlan.classList.add('active');
+   buttonKeinPlan.classList.add('active');
+ }
+ buttonKeinPlan.addEventListener('click', handleKeinPlanButtonClick);
