@@ -12,7 +12,7 @@
         <div class="product">
         <div class="product-card">
             <div class="product-card__container">
-                <img class="product-card__container-img"src="kamile/img/kamille.jpg" alt="Kamile">
+                <img class="product-card__container-img"src="/img/kamille.jpg" alt="Kamile">
             </div>
             <div class="product-card__container">
                 <h1 class="product-card__container-name">

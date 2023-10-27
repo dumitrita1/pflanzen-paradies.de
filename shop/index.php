@@ -46,21 +46,21 @@
                 <div class="display-flex-shop">                   
                         <li class="shop-list__link" data-ort="zimmerpflanze" data-size="groß" data-price="25">
                             <a href="/shop/zimmerpflanze/strelitzia">
-                                <img src="/shop/img/planta1.jpg" alt="Strelitzia">                    
+                                <img src="/img/planta1.jpg" alt="Strelitzia">                    
                                 <p class="shop-list__link-text"> Strelitzia</p>
                                 <p class="shop-list__link-text"> 25€</p>
                             </a>
                         </li>
                         <li class="shop-list__link" data-ort="zimmerpflanze" data-size="klein" data-price="65">
                         <a href="/shop/zimmerpflanze/epipremnum-aureum">
-                                <img src="/shop/img/planta8.jpg" alt="Epipremnum aureum">
+                                <img src="/img/planta8.jpg" alt="Epipremnum aureum">
                                 <p class="shop-list__link-text"> Epipremnum aureum</p>
                                 <p class="shop-list__link-text"> 65€</p>
                         </a>
                         </li>
                         <li class="shop-list__link" data-ort="zimmerpflanze" data-size="klein" data-price="70">
                             <a href="/shop/zimmerpflanze/monstera">
-                                <img src="/shop/img/planta3.jpg" alt="Monstera">
+                                <img src="/img/planta3.jpg" alt="Monstera">
                                 <p class="shop-list__link-text">Monstera</p>
                                 <p class="shop-list__link-text"> 70€</p>
                             </a>
@@ -74,84 +74,84 @@
                         </li>
                         <li class="shop-list__link" data-ort="zimmerpflanze"data-size="klein"data-price="35">
                             <a href="/shop/zimmerpflanze/flamingoblumen">
-                                <img src="/shop/img/planta5.jpg" alt="Flamingoblumen">
+                                <img src="/img/planta5.jpg" alt="Flamingoblumen">
                                 <p class="shop-list__link-text">Flamingoblumen</p>
                                 <p class="shop-list__link-text"> 35€</p>
                             </a>
                         </li>
                         <li class="shop-list__link" data-ort="zimmerpflanze"data-size="groß"data-price="25">
                             <a href="/shop/zimmerpflanze/gronskan" >
-                                <img src="/shop/img/planta6.jpg" alt="Grönskan">
+                                <img src="/img/planta6.jpg" alt="Grönskan">
                                 <p class="shop-list__link-text">Aloe</p>
                                 <p class="shop-list__link-text"> 25€</p>
                             </a>
                         </li>
                         <li class="shop-list__link" data-ort="zimmerpflanze" data-size="groß" data-price="38">
                             <a href="/shop/zimmerpflanze/areca-palme">
-                                <img src="/shop/img/planta7.jpg" alt="Areca Palme">
+                                <img src="/img/planta7.jpg" alt="Areca Palme">
                                 <p class="shop-list__link-text">Areca Palme</p>
                                 <p class="shop-list__link-text"> 38€</p>
                             </a>
                         </li>
                         <li class="shop-list__link" data-ort="zimmerpflanze"data-size="klein" data-price="15">
                         <a href="/shop/zimmerpflanze/spathiphyllum">
-                                <img src="/shop/img/planta2.jpg" alt="Spathiphyllum">
+                                <img src="/img/planta22.jpg" alt="Spathiphyllum">
                                 <p class="shop-list__link-text">Spathiphyllum</p>
                                 <p class="shop-list__link-text"> 15€</p>
                         </a>
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze"data-size="groß" data-price="45">
                         <a href="/shop/gartenpflanze/hortensie" >
-                                <img src="/shop/img/hr.jpg" alt="Hochstämmige Rispenhortensie">
+                                <img src="/img/hr.jpg" alt="Hochstämmige Rispenhortensie">
                                 <p class="shop-list__link-text">Hochstämmige</p>
                                 <p class="shop-list__link-text"> 45€</p>
                         </a>
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze"data-size="klein" data-price="20">
                             <a href="/shop/zimmerpflanze/sansevieria-trifasciata">
-                                <img src="/shop/img/planta10.jpg" alt="SANSEVIERIA TRIFASCIATA ">
+                                <img src="/img/planta10.jpg" alt="SANSEVIERIA TRIFASCIATA ">
                                 <p class="shop-list__link-text">"SANSEVIERIA  </p>
                                 <p class="shop-list__link-text"> 20€</p>
                             </a>
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze" data-size="mittel" data-price="200">
                             <a href="/shop/gartenpflanze/bonsai">
-                                <img src="/shop/img/bonsai.jpg"  alt="Bonsai">
+                                <img src="/img/bonsai.jpg"  alt="Bonsai">
                                 <p class="shop-list__link-text">Bonsai</p>
                                 <p class="shop-list__link-text"> 200€</p>
                             </a>
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze"data-size="mittel" data-price="205">
                             <a href="/shop/gartenpflanze/kamile">
-                                <img src="/shop/img/kamille.jpg"  alt="Kamile">
+                                <img src="/img/kamille.jpg"  alt="Kamile">
                                 <p class="shop-list__link-text">Kamile</p>
                                 <p class="shop-list__link-text"> 205€</p>
                             </a>    
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze"data-size="mittel" data-price="80">
                             <a href="/shop/gartenpflanze/lavender">
-                                <img src="/shop/img/lavander.jpg"  alt="Lavander">
+                                <img src="/img/lavander.jpg"  alt="Lavander">
                                 <p class="shop-list__link-text">Lavander</p>
                                 <p class="shop-list__link-text"> 80€</p>
                             </a>
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze" data-size="groß" data-price="25">
                             <a href="/shop/gartenpflanze/magnolia">
-                                <img src="/shop/img/magnolia.jpg"  alt="Magnolia">
+                                <img src="/img/magnolia.jpg"  alt="Magnolia">
                                 <p class="shop-list__link-text"> Magnolia</p>
                                 <p class="shop-list__link-text"> 25€</p>
                             </a>
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze" data-size="klein" data-price="180">
                             <a href="/shop/gartenpflanze/olivenbaum">
-                                <img src="/shop/img/olivenbaum.jpg" alt="Olivenbaum">
+                                <img src="/img/olivenbaum.jpg" alt="Olivenbaum">
                                 <p class="shop-list__link-text">Olivenbaum</p>
                                 <p class="shop-list__link-text"> 180€</p>
                             </a>
                         </li>
                         <li class="shop-list__link"data-ort="gartenpflanze"data-size="klein" data-price="55">
                             <a href="/shop/gartenpflanze/rebe">
-                                <img src="/shop/img/Vinesplant.jpg" alt="Kanadische Rebe">
+                                <img src="/img/vinesplant.jpg" alt="Kanadische Rebe">
                                 <p class="shop-list__link-text">Kanadische Rebe</p>
                                 <p class="shop-list__link-text"> 55€</p>
                             </a>
@@ -159,7 +159,7 @@
 
                         <li class="shop-list__link"data-ort="zimmerpflanze" data-size="mittel" data-price="65">
                         <a href="/shop/zimmerpflanze/zamioculcas-zamiifolia">
-                                <img src="/shop/img/planta9.jpg" alt="Zamioculcas zamiifolia">
+                                <img src="/img/planta9.jpg" alt="Zamioculcas zamiifolia">
                                 <p class="shop-list__link-text">Zamioculcas zamiifolia</p>
                                 <p class="shop-list__link-text"> 65€</p>
                         </a>

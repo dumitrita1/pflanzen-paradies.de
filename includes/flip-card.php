@@ -6,7 +6,7 @@
                     <li class="flip-card">
                         <div class="flip-card__inner">
                             <div class="flip-card__front">
-                                <img src="img/SuniLee.jpg" alt="Suni Lee- Floristin">
+                                <img src="/img/SuniLee.jpg" alt="Suni Lee- Floristin">
                             </div>
                             <div class="flip-card__back">
                                 <strong>Suni Lee</strong>
@@ -19,7 +19,7 @@
                     <li class="flip-card">
                         <div class="flip-card__inner">
                         <div class="flip-card__front">
-                            <img src="img/MatthiasMüller.jpg" alt="Matthias Müller - Designer">
+                            <img src="/img/MatthiasMüller.jpg" alt="Matthias Müller - Designer">
                         </div>
                         <div class="flip-card__back">
                         <strong>Matthias Müller</strong>
@@ -31,7 +31,7 @@
                     <li class="flip-card">
                         <div class="flip-card__inner">
                             <div class="flip-card__front">
-                            <img src="img/johnDeo.jpg" alt="John Doe- Gärtner">
+                            <img src="/img/johnDeo.jpg" alt="John Doe- Gärtner">
                             </div>
                         <div class="flip-card__back">
                              <strong>John Doe</strong>

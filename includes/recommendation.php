@@ -11,19 +11,15 @@
     </li>
     <li class="recommendation-list__item">
         <a class="recommendation-list__item-link" href="/shop/zimmerpflanze/monstera">
-            <img class="recommendation-list__item-img"src="/deko/img/planta3.jpg" alt="Monstera 25€">
+            <img class="recommendation-list__item-img"src="/img/planta3.jpg" alt="Monstera 25€">
         </a>
     </li>
     <li class="recommendation-list__item">
     <a  class="recommendation-list__item-link" href="/shop/zimmerpflanze/strelitzia">
-            <img class="recommendation-list__item-img"src="/deko/img/planta1.jpg"  alt="Strelitzia 45€ ">
+            <img class="recommendation-list__item-img"src="/img/planta1.jpg"  alt="Strelitzia 45€ ">
 
         </a>
     </li>
-    <li class="recommendation-list__item">
-        <a class="recommendation-list__item-link" href="/shop">
-            <img class="recommendation-list__item-img"src="/img/fast-forward.png" width="" alt="double arrow">
-        </a>
-    </li>
+    <button class="slide-arrow"> ⟫ </button>
 </ul>
 </div>

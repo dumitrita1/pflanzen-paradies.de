@@ -17,25 +17,25 @@
             <div class=deko-shop>
                     <div class="deko-shop__produs">
                         <a href ="/deko/trockenen-blumen">
-                            <img src="/deko/img/blumen3.jpg" alt="Getrocknete Pflanze mit Tannenzapfen">
+                            <img src="/img/blumen3.jpg" alt="Getrocknete Pflanze mit Tannenzapfen">
                             <p class="shop-list__link-text">Getrocknete Pflanze</p>
                         </a>
                     </div>
                     <div class="deko-shop__produs">
                         <a href="/deko/blumentopf">
-                            <img src="/deko/img/topf.jpg"  alt="Blumentopf">
+                            <img src="/img/topf.jpg"  alt="Blumentopf">
                             <p class="shop-list__link-text">Blumentopf</p>
                         </a>
                     </div>
                     <div class="deko-shop__produs">
                         <a href="/deko/keramikvase">
-                            <img src="/deko/img/vase.jpg"  alt="handgefertigte Keramikvase">
+                            <img src="/img/vase.jpg"  alt="handgefertigte Keramikvase">
                             <p class="shop-list__link-text">Keramikvase</p>
                         </a>
                     </div>
                     <div class="deko-shop__produs">
                         <a href="/deko/steine">
-                            <img src="/deko/img/steine.jpg"  alt="Mehrfarbige Steine">
+                            <img src="/img/steine.jpg"  alt="Mehrfarbige Steine">
                             <p class="shop-list__link-text">Mehrfarbige Steine</p>
                         </a>
                     </div>

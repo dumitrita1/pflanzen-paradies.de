@@ -13,7 +13,7 @@
         <div class="product">
         <div class="product-card">
             <div class="product-card__container">
-                <img src="keramikvase/img/vase.jpg" width="350px" alt="keramikvase ">
+                <img src="/img/vase.jpg" width="350px" alt="keramikvase ">
             </div>   
             <div class="product-card__container"> 
                 <h1>

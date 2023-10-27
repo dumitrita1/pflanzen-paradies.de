@@ -12,7 +12,7 @@
         <div class="product">
         <div class="product-card">
             <div class="product-card__container">
-                <img class="product-card__container-img" src="spathiphyllum/img/planta2.jpg" alt="Spathiphyllum">
+                <img class="product-card__container-img" src="/img/planta22.jpg" alt="Spathiphyllum">
             </div>
             <div class="product-card__container">
             <h1 class="product-card__container-name">

@@ -13,9 +13,9 @@
         <div class="product">
         <div class="product-card">
             <div class="product-card__container">
-        <img src="trockenen-blumen/img/blumen1.jpg" width="350px" alt="Trockenen Blumen ">
-        <img src="trockenen-blumen/img/blumen2.jpg" width="350px" alt="Trockenen Blumen ">
-        <img src="trockenen-blumen/img/blumen3.jpg" width="350px" alt="Trockenen Blumen ">    
+        <img src="/img/blumen1.jpg" width="350px" alt="Trockenen Blumen ">
+        <img src="/img/blumen2.jpg" width="350px" alt="Trockenen Blumen ">
+        <img src="/img/blumen3.jpg" width="350px" alt="Trockenen Blumen ">    
         </div>
         <div class="product-card__container">
                 <h1>

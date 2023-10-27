@@ -13,7 +13,7 @@
             <div class="product">
                 <div class="product-card">
                     <div class="product-card__container">
-                        <img class="product-card__container-img"src="areca-palme/img/planta7.jpg" alt="Areca palme">
+                        <img class="product-card__container-img"src="/img/planta7.jpg" alt="Areca palme">
                     </div>
                     <div class="product-card__container">
                         <h1 class="product-card__container-name">

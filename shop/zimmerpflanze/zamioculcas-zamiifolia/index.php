@@ -12,7 +12,7 @@
         <div class="product">
         <div class="product-card">
             <div class="product-card__container">
-                <img class="product-card__container-img"src="zamioculcas-zamiifolia/img/planta9.jpg" alt="Zamioculcas Zamiifloia">
+                <img class="product-card__container-img"src="/img/planta9.jpg" alt="Zamioculcas Zamiifloia">
             </div>
             <div class="product-card__container">
                 <h1 class="product-card__container-name">
