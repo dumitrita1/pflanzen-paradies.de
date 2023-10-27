@@ -1,2 +1,8 @@
 .DS_Store
 video/*
+
+##DDEV Stuff
+.ddev/docker-compose.*
+.ddev/addon-metadata/*
+.ddev/adminer/*
+.ddev/commands/*
