@@ -40,24 +40,23 @@
                             <option value="alle" >Alle Größen</option>
                             <option value="klein">Klein</option>
                             <option value="mittel">Mittel</option>
-                            <option value="groß" >Groß</option>
+                            <option value="gross" >Groß</option>
                         </select>
                     </form>
             </div>
             <div class="display-flex-shop">
                     
                 <?php
-                $sql = "SELECT id, img, name, preis, name_kategorie, name_grosse
+                $sql = "SELECT id, img, name, preis,  name_kategorie, grosse
                 FROM produkt
                 INNER JOIN kategorie ON produkt.category = `kategorie`.`id-kategorie`
-                INNER JOIN grosse ON produkt.grosse = grosse.`id-grosse`;
                ";
                 $query = $pdo->query($sql);
 
                         foreach ( $query as $row) {
                         echo "<li class=\"shop-list__link\" 
                         data-ort=\"" . strtolower($row['name_kategorie']) . 
-                        "\" data-size=\"" . strtolower($row['name_grosse']) .
+                        "\" data-size=\"" . strtolower($row['grosse']) .
                          "\" data-price=\"" .$row['preis'] 
                          . "\">";
                          echo "<a href=\"/shop/pflanze.php?id=" . $row['id'] . "\"><img src=\"/img/" 

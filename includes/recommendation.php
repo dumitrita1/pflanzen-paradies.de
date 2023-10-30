@@ -1,25 +1,25 @@
+<?php include "../config/database.php" ?>
 
-<div class="recommendation">
-<p class="text">
-    Empfohlene Produkte
-</p>
-<ul class="recommendation-list">
-    <li class="recommendation-list__item">
-    <a class="recommendation-list__item-link" href="/shop/zimmerpflanze/zamioculcas">
-            <img class="recommendation-list__item-img"src="/img/planta4.jpg" alt="Zamioculcas 30€">
-        </a>
-    </li>
-    <li class="recommendation-list__item">
-        <a class="recommendation-list__item-link" href="/shop/zimmerpflanze/monstera">
-            <img class="recommendation-list__item-img"src="/img/planta3.jpg" alt="Monstera 25€">
-        </a>
-    </li>
-    <li class="recommendation-list__item">
-    <a  class="recommendation-list__item-link" href="/shop/zimmerpflanze/strelitzia">
-            <img class="recommendation-list__item-img"src="/img/planta1.jpg"  alt="Strelitzia 45€ ">
 
-        </a>
-    </li>
-    <button class="slide-arrow"> ⟫ </button>
-</ul>
-</div>
+<?php
+    echo "<div class=\"recommendation\">";
+    echo "<p class=\"text\"> Empfohlene Produkte </p>";
+    echo "<ul class=\"recommendation-list\">";
+
+    $sql = "SELECT id, img, name FROM produkt  WHERE id IN  (5, 6, 4)" ;
+    $query = $pdo->query($sql);
+
+    foreach ($query as $row) {
+        echo "<li class=\"recommendation-list__item\">";
+        echo "<a class=\"recommendation-list__item-link\" href=\"/shop/pflanze.php?id=" . $row['id'] . "\"> <img class=\"recommendation-list__item-img\" src=\"/img/" 
+            . $row['img']
+            . "\" alt=" 
+            . $row['name'] 
+            . "\">"
+            . "</a>"
+            . "</li>";
+    }
+    echo "<button class=\"slide-arrow\"> ⟫ </button>";
+    echo "</ul>" ."</div>";
+?>
+

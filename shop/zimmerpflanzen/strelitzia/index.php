@@ -17,7 +17,7 @@
             </div>
             <div class="product-card__container">
             <h1 class="product-card__container-name">
-                Strelitzia <button class="zu-wissen"> 25€❕<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
+                Strelitzia<button class="zu-wissen">25€<span class="zu-wissen__tip">Alle Preise verstehen sich zzgl. MwSt. </span></button>
                 </h1>
                 <p class="product-card__container-text"> Richtig gelesen, so nennt man die Baum-Strelitzie im englischsprachigen Raum! Welcher Name 
                     wird ihr wohl eher gerecht? Beide treffen jedenfalls zu, auch wenn der Englische sooo viel schöner klingt!

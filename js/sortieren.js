@@ -53,8 +53,8 @@ function sortPlantsSize() {
 
         plant => {
             const dataOrt = plant.getAttribute('data-ort');
-            const dataSize = plant.getAttribute('data-size');
-        if (sizeValue == 'alle' || (dataSize == sizeValue && (dataOrt == ortValue || ortValue == 'alle'))) {
+            const dataSize = plant.getAttribute('data-size').split(",");
+        if (sizeValue == 'alle' || (dataSize.includes(sizeValue) && (dataOrt == ortValue || ortValue == 'alle'))) {
             plant.style.display = 'block';
         } else {
             plant.style.display = 'none';
