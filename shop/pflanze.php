@@ -50,13 +50,10 @@
                     echo "<button class=\"corb\">In den Warenkorb </button>" 
                     . "</div>" . "</form>" . "</div>" . "</div>";
                     echo "<div class=\"plant-needs\">";
+
                     if ($row['category'] == 1) {
                         echo "<p class=\"plant-needs__title\">" . $row['title2'];
-                        if ($sort == 'w') {
-                            echo "Was braucht deine";
-                        } else {
-                            echo "Was braucht dein";
-                        }
+                        echo "Was braucht dein" . ($row['sort'] == 'w' ? "e" : "");
                         echo " " . $row['name'] . "?" . "</p>";
                     }
                     
