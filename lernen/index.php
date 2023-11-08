@@ -1,3 +1,4 @@
+<?php include "../config/database.php" ?>
 <!doctype html>
 <html>
     <head>

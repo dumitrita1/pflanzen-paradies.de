@@ -1,3 +1,4 @@
+<?php include "../config/database.php" ?>
 <!doctype html>
 <html>
     <head>
@@ -70,7 +71,7 @@
                         </p>
                     </section>
             </div>
-             <?php include "../includes/flip-card.php"?>
+             <?php include "../includes/personal.php"?>
              <div class="plant-addiction">
                 <div class="plant-addiction__text">
                     <h3 class="text">Das ist Plantaddiction</h3>

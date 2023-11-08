@@ -1,3 +1,4 @@
+<?php include "config/database.php" ?>
 <!doctype html>
 <html>
     <head>
@@ -22,7 +23,7 @@
                         an dem sich Natur und Stadtleben harmonisch verbinden.
                     </p>  
                 <?php include "includes/recommendation.php" ?>     
-                <?php include "includes/flip-card.php"?>
+                <?php include "includes/personal.php"?>
                 <?php include "includes/advantages.php"?>
                 <?php include "includes/post-card.php"?>
             <?php include "includes/reise.php"?>

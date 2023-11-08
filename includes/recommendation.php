@@ -1,12 +1,10 @@
-<?php include "../config/database.php" ?>
-
 
 <?php
     echo "<div class=\"recommendation\">";
     echo "<p class=\"text\"> Empfohlene Produkte </p>";
     echo "<ul class=\"recommendation-list\">";
 
-    $sql = "SELECT id, img, name FROM produkt  WHERE id IN  (5, 6, 4)" ;
+    $sql = "SELECT id, img, name FROM produkt  ORDER BY RAND() LIMIT 3" ;
     $query = $pdo->query($sql);
 
     foreach ($query as $row) {
