@@ -11,20 +11,22 @@
         <div class="document">
             <?php include "includes/header.php" ?>
             <main>
-                <?php include "includes/call-to-action.php" ?>
-                <h2 class= "shop-description__name">Pflanzenparadies ist nicht nur ein Name, sondern ein Versprechen.</h2>
-                <p class="shop-description">✼ ✼ ✼ ✼ ✼ <p>
-                <p class="shop-description">
-                        Beim Betreten dieses einzigartigen Pflanzenladens wird man von einer Vielfalt an Grüntönen 
-                        und floralen Düften empfangen. Vom Fensterbrett-Kaktus bis zur majestätischen Zimmerpalme – 
-                        hier findet jeder sein grünes Glück. Mit Leidenschaft ausgewählt und präsentiert, 
-                        spiegelt jedes Gewächs die Liebe zum Detail und Fachwissen des Teams wider.
-                        Das Pflanzenparadies ist mehr als nur ein Geschäft; es ist ein Ort, 
-                        an dem sich Natur und Stadtleben harmonisch verbinden.
-                    </p>  
+               <?php include "includes/call-to-action.php" ?>
+               
+               <?php 
+               $sql = "SELECT name, text1, text2 FROM seite where id=1";
+               $query = $pdo->query($sql);
+               foreach ($query as $row) {
+               echo "<h2 class=\"shop-description__name\">"  . $row['name'] ."</h2>"; 
+               echo "<p class=\"shop-description\">"  . $row['text1'] ."</p>"; 
+               echo "<p class=\"shop-description\">"  . $row['text2'] ."</p>"; 
+               }
+               
+               ?>
                 <?php include "includes/recommendation.php" ?>     
                 <?php include "includes/personal.php"?>
                 <?php include "includes/advantages.php"?>
+                <?php include "includes/plantaddiction.php"?>
                 <?php include "includes/post-card.php"?>
             <?php include "includes/reise.php"?>
             </main>
