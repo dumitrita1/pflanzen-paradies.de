@@ -1,5 +1,60 @@
+.miniplant {
+   min-height: 200px;
+   background-image: url(/img/plant-small.png);
+   background-repeat: no-repeat;
+   background-size: 300px;
+   background-position:top center;
+   padding-bottom: 20%;
+}
 
- /*@media (max-width:1100px) {
+.pair {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+.pair__column {
+   display: flex;
+   align-items: center;
+}
+
+.list {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   text-shadow: 1px 1px 1px white;
+   font-size: var(--size-lg);
+}
+
+.list--left {
+   text-align: left;
+   color: var(--color-second__dark);
+}
+
+.list--right {
+   text-align: right;
+   color: var(--color-second__dark);
+}
+
+.first-column {
+   padding-left: 20%;
+}
+
+.second-column{
+   padding-left: 2%;
+}
+
+.first-column li,.second-column li {
+   padding: 20%;
+    list-style: none;
+    color: var(--color-primary__dark);
+    font-size: var(--size-xl);
+    font-weight: bold;
+ } 
+ @media (max-width:1100px) {
    .miniplant{
       background-size: 200px;
    }
@@ -12,4 +67,4 @@
  .first-column li, .second-column li {
    font-size: var(--size-xs);
  }
-}*/
+}

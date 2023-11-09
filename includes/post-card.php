@@ -1,6 +1,6 @@
 <div class="post-card">
             <li class="post-card__container">
-                <video class="post-card__contiainer-video"width="560" src="video/plantssop.mp4" controls autoplay loop ></video>
+                <video class="post-card__contiainer-video"width="560" src="img/plantssop.mp4" controls autoplay loop ></video>
             </li>
             <li class="post-card__container">
                     <p class="post-card__container-description">Das <strong>Pflanzenparadies</strong> ist nicht nur ein Name, sondern ein Versprechen.
