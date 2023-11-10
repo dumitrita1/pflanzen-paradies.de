@@ -1,4 +1,5 @@
-<?php include "config/database.php" ?>
+<?php include  $_SERVER['DOCUMENT_ROOT'] . "/config/database.php" ?>
+
 <!doctype html>
 <html>
     <head>
@@ -14,8 +15,9 @@
                <?php include "includes/call-to-action.php" ?>
                
                <?php 
-               $sql = "SELECT name, text1, text2 FROM seite where id=1";
-               $query = $pdo->query($sql);
+               $sql =$pdo->prepare ("SELECT name, text1, text2 FROM seite where id=1");
+               $sql->execute();
+               $query = $sql->fetchAll();
                foreach ($query as $row) {
                echo "<h2 class=\"shop-description__name\">"  . $row['name'] ."</h2>"; 
                echo "<p class=\"shop-description\">"  . $row['text1'] ."</p>"; 

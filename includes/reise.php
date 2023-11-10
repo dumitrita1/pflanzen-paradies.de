@@ -5,8 +5,9 @@
 </div>
 
 <?php
-$sql="SELECT name, img FROM reise ";
-$query = $pdo->query($sql);
+$sql= $pdo->prepare("SELECT name, img FROM reise");
+$sql->execute();
+$query = $sql->fetchAll();
 echo "<ul class=\"trip-plant\">";
 
 foreach ($query as $row){

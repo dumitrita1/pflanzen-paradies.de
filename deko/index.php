@@ -1,4 +1,4 @@
-<?php include "../config/database.php" ?>
+<?php include  $_SERVER['DOCUMENT_ROOT'] . "/config/database.php" ?>
 <!doctype html>
 <html>
     <head>
@@ -12,8 +12,9 @@
 
         <main>
         <?php 
-               $sql = "SELECT name, text1 FROM seite where id=4";
-               $query = $pdo->query($sql);
+               $sql = $pdo->prepare("SELECT name, text1 FROM seite where id=4");
+               $sql->execute();
+                $query = $sql->fetchAll();
                foreach ($query as $row) {
                echo "<h1 class=\"text\">"  . $row['name'] ."</h2>"; 
                echo "<p class=\"text\">"  . $row['text1'] ."</p>"; 

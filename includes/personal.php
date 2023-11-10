@@ -2,10 +2,10 @@
  <ul class="perssonal">
 
  <?php
-$sql ="SELECT img, name, description
-FROM  personal";
-$query = $pdo->query($sql);
-
+$sql =$pdo->prepare("SELECT img, name, description
+FROM  personal");
+$sql->execute();
+$query = $sql->fetchAll();
 
 foreach ($query as $row) {
     echo "<li class=\"flip-card\">";
