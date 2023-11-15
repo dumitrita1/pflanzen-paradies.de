@@ -17,9 +17,9 @@
           
                 <?php
                $id = $_GET['id'] ?? '';
-               $sql = $pdo->prepare("SELECT img, name, sort, preis, grosse, category, title2, text1, T1, T2, T3, T4, T5, T6, B1, B2, B3, B4, B5, B6 
-                   FROM produkt 
-                   WHERE id = :id;");
+               $sql = $pdo->prepare("SELECT produkt.id AS `produkt.id`, anmeldedaten.id AS `anmeldedaten.id`, img, produkt.name, sort, preis, grosse, category, title2, text1, T1, T2, T3, T4, T5, T6, B1, B2, B3, B4, B5, B6 
+               FROM produkt, anmeldedaten  
+                   WHERE produkt.id =:id;");
                $sql->bindParam(':id', $id, PDO::PARAM_INT);
                $sql->execute();
                $query = $sql->fetchAll();
@@ -50,12 +50,10 @@
                     echo "</select>";
                     echo "<label>Stück</label>";
                     echo "<input id=\"stuck\" type=\"number\" name=\"stuck\" min=\"1\" max=\"10\" value=\"1\">";
-                    echo "<input id=\"name\" type=\"hidden\" name=\"name\" value=\"" .$row['name'] . "\">";
-                    echo "<input id=\"img\" type=\"hidden\" name=\"img\" value=\"" .$row['img'] . "\">";
-                    echo "<input id=\"preis\" type=\"hidden\" name=\"preis\" value=\"" .$row['preis'] . "\">";
+                    echo "<input id=\"name\" type=\"hidden\" name=\"name\" value=\"" . $row['name'] . "\">";
+                    echo "<input id=\"img\" type=\"hidden\" name=\"img\" value=\"" . $row['img'] . "\">";
+                    echo "<input id=\"preis\" type=\"hidden\" name=\"preis\" value=\"" . $row['preis'] . "\">";
                     echo "<input id=\"total\" type=\"hidden\" name=\"total\" value=\""  . $row['preis'] . "\">";
-                   
-
                     echo "<div class=\"product-form__button\">";
 
                    
@@ -63,6 +61,8 @@
                     echo "<button class=\"\" type=\"submit\">zum Warenkorb hinzufügen</button>" ; 
                     echo "</div></form>";
                     echo "<form action=\"favorit.php\" method=\"post\">" ;
+                    echo "<input id=\"id\" type=\"hidden\" name=\"anmeldedaten-id\" value=\"" . $row['anmeldedaten.id'] . "\">";
+                    echo "<input id=\"id\" type=\"hidden\" name=\"produkt-id\" value=\"" . $row['produkt.id'] . "\">";
                     echo "<button class=\"\" type=\"submit\">Love it! </button>";
                     echo "</form>";
                     echo "</div>" . "</div>";

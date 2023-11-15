@@ -13,43 +13,47 @@
 
         <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $img = $_POST["img"];
-    $preis = $_POST["preis"];
+    $anmelde = $_POST["anmeldedaten-id"];
+    $produkt = $_POST["produkt-id"];
+   
+   
 
-    echo "Name: " . $name . "<br>";
-    echo "Img: " . $img . "<br>";
-    echo "Preis: " . $preis . "<br>";
-
-        $sql = $pdo->prepare("INSERT INTO fav (name, img, preis, benutzer) VALUES (?, ?, ?) INNER JOIN fav ON ");
-        $sql->bindParam(1, $name, PDO::PARAM_STR);
-        $sql->bindParam(2, $img, PDO::PARAM_STR);
-        $sql->bindParam(3, $preis, PDO::PARAM_STR);
-        $sql->bindParam(4, $benutzer, PDO::PARAM_STR);
-        $sql->execute();
+        $sql = $pdo->prepare("INSERT INTO fav (benutzer, produkt) VALUES (?, ?) ");
+        $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
+        $sql->bindParam(2, $produkt, PDO::PARAM_INT);
+        
+        $sql->execute(); 
 }
 ?>
 
 
         <?php 
-        $sql = $pdo->prepare ("SELECT name,img, preis
-        FROM fav");
+        $sql = $pdo->prepare ("SELECT name, img, preis
+        FROM fav, produkt WHERE fav.benutzer = ? and produkt.id = ?;");
+        $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
+        $sql->bindParam(2, $produkt, PDO::PARAM_INT);
+
             $sql->execute();
             $query = $sql->fetchAll();
+
             echo "<div class=\"\">";
             echo "<h2 class=\"warenkorb\">Mein Merkzettel</h2>";
             echo "<ul class=\"cart-list\">";
-            foreach ( $query as $row) {
-                echo "<li><span><strong>" .$row['name'] . "</strong></span>" ."<span>" .$row['img'] ."</span>";
-                echo "<span>" .$row['preis'] ."€"  . "</span>"  
-                . "</span></li>";
+            foreach ($query as $row) {
+        
+                echo "<li>"
+                    . "<span>" . "<img  class=\"product-card__container-img\" src=\"/img/" . $row['img'] . "\" alt=" 
+                    . $row['name'] 
+                    . ">". "</span>"
+                    ."<span><strong>" . $row['name'] . "</strong></span>"; 
+                echo "<span>" . $row['preis'] . "€" . "</span>" . "</span></li>";
+
+                echo "<div class=\"favorit-button\">";
+                echo "<button>⌫ Entfernen</button>";
+                echo "<button> 🛒 In den Warenkorb</button>";
+                echo "</div>";
             }
             echo "</ul>"."</h2>" ."</div>";
-
-            echo "<div class=\"cart-button\">";
-            echo "<button>⟪ Weiter einkaufen</button>";
-            echo "<button>Zur Kasse ⟫</button>";
-            echo "</div>";
             echo "</div>";
     ?>
 

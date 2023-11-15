@@ -19,6 +19,7 @@
 @import url("search.css");
 @import url("fav.css");
 @import url("cart.css");
+@import url("favorit.css");
 
 * {
     margin: 0;
