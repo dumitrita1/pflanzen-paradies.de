@@ -16,16 +16,15 @@
         <div class="product-card">
           
                 <?php
-                $id = $_GET['id'] ?? '';
-                $sql= $pdo->prepare("SELECT img, name, sort, preis, grosse,category, title2, text1, T1, T2, T3, T4, T5, T6, B1, B2, B3, B4, B5, B6 
-                FROM produkt 
-                Where id = :id;
-                ");
-                $sql->bindParam(':id', $id, PDO::PARAM_INT);
-                $sql->execute();
-                $query = $sql->fetchAll();
+               $id = $_GET['id'] ?? '';
+               $sql = $pdo->prepare("SELECT img, name, sort, preis, grosse, category, title2, text1, T1, T2, T3, T4, T5, T6, B1, B2, B3, B4, B5, B6 
+                   FROM produkt 
+                   WHERE id = :id;");
+               $sql->bindParam(':id', $id, PDO::PARAM_INT);
+               $sql->execute();
+               $query = $sql->fetchAll();
 
-                if (!$query == '') {
+                if (!empty ($query)) {
 
                 foreach ( $query as $row) {
                     $grosse = explode(",", $row['grosse']);
@@ -50,17 +49,23 @@
                     }
                     echo "</select>";
                     echo "<label>Stück</label>";
-                    echo "<input id=\"stuck\" type=\"number\" name=\"stuck\" min=\"1\" max=\"10\" value=\"\">";
+                    echo "<input id=\"stuck\" type=\"number\" name=\"stuck\" min=\"1\" max=\"10\" value=\"1\">";
                     echo "<input id=\"name\" type=\"hidden\" name=\"name\" value=\"" .$row['name'] . "\">";
+                    echo "<input id=\"img\" type=\"hidden\" name=\"img\" value=\"" .$row['img'] . "\">";
                     echo "<input id=\"preis\" type=\"hidden\" name=\"preis\" value=\"" .$row['preis'] . "\">";
                     echo "<input id=\"total\" type=\"hidden\" name=\"total\" value=\""  . $row['preis'] . "\">";
                    
 
                     echo "<div class=\"product-form__button\">";
-                    echo "<button class=\"favorit\">Love it! </button>";
+
+                   
                     echo "<button class=\"corb\">In den Warenkorb </button>";
                     echo "<button class=\"\" type=\"submit\">zum Warenkorb hinzufügen</button>" ; 
-                    echo "</div></form>" . "</div>" . "</div>";
+                    echo "</div></form>";
+                    echo "<form action=\"favorit.php\" method=\"post\">" ;
+                    echo "<button class=\"\" type=\"submit\">Love it! </button>";
+                    echo "</form>";
+                    echo "</div>" . "</div>";
                     echo "<div class=\"plant-needs\">";
 
                     if ($row['category'] == 1) {

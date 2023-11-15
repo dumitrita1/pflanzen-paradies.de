@@ -11,30 +11,57 @@
     <div class="document">
         <?php include  $_SERVER['DOCUMENT_ROOT'] ."/includes/header.php" ?>
 
-        <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $grosse = $_POST["grosse"];
-    $stuck = $_POST["stuck"];
-    $preis = $_POST["preis"];
+        
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = $_POST["name"];
+            $grosse = $_POST["grosse"];
+            $stuck = $_POST["stuck"];
+            $preis = $_POST["preis"];
 
-    $total_ausrechnen = $pdo->prepare("SELECT (stuck * preis) AS total FROM warenkorb");
-    $total_ausrechnen->execute(); 
+            $total = $stuck * $preis;
+            
+            $sql = $pdo->prepare("INSERT INTO warenkorb (name, grosse, stuck, preis, total) VALUES (?, ?, ?, ?, ?)");
 
-    $total = $total_ausrechnen->fetchColumn();
-    $sql = $pdo->prepare("INSERT INTO warenkorb (name, grosse, stuck, preis, total) VALUES (?, ?, ?, ?, ?)");
-        $sql->bindParam(1, $name, PDO::PARAM_STR);
-        $sql->bindParam(2, $grosse, PDO::PARAM_STR);
-        $sql->bindParam(3, $stuck, PDO::PARAM_INT);
-        $sql->bindParam(4, $preis, PDO::PARAM_INT);
-        $sql->bindParam(5, $total, PDO::PARAM_INT);
+            $sql->bindParam(1, $name, PDO::PARAM_STR);
+            $sql->bindParam(2, $grosse, PDO::PARAM_STR);
+            $sql->bindParam(3, $stuck, PDO::PARAM_INT);
+            $sql->bindParam(4, $preis, PDO::PARAM_INT);
+            $sql->bindParam(5, $total, PDO::PARAM_INT);
+            $sql->execute();
+        }
+        ?>
+
+    <?php 
+       $sql = $pdo->prepare ("SELECT name, grosse, stuck, total
+        FROM warenkorb");
+            $sql->execute();
+            $query = $sql->fetchAll();
+            echo "<div class=\"\">";
+            echo "<h2 class=\"warenkorb\">Warenkorb</h2>";
+            echo "<ul class=\"cart-list\">";
+            foreach ( $query as $row) {
+                echo " <li><span><strong>" .$row['name'] . "</strong></span><span>" .$row['grosse']. "</span><span>" .$row['stuck'] ."Stuck". "</span><span>" .$row['total'] ."€" 
+                . "</span>"."</li>";
+            }
+            echo "</ul>";
+            $sum = $pdo->prepare("SELECT SUM(total) as total_sum FROM warenkorb");
+            $sum->execute();
+            $result = $sum->fetch();
+            $totalSum = $result['total_sum'];
+            
+            echo "<p class= \"warenkorb-preis\">Total: $totalSum €</p>";
+
+            echo "<div class=\"cart-button\">";
+            echo "<button>⟪ Weiter einkaufen</button>";
+            echo "<button>Zur Kasse ⟫</button>";
+            echo "</div>";
+            echo "</div>";
+    ?>
+
     
-    $sql->execute();
-}
 
 
-    
-?>
 
   
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/recommendation.php"?>
