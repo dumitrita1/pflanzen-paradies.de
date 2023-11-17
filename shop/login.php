@@ -17,7 +17,6 @@ session_start();
 if(isset($_GET['login'])) {
     $email = $_POST['email'];
     $password = $_POST["password"];
-    echo $password;
     $statement = $pdo->prepare("SELECT * FROM registriren WHERE email = :email");
     $result = $statement->execute(array(':email' => $email));
     $user = $statement->fetch();

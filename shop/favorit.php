@@ -11,6 +11,9 @@
     <div class="document">
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/header.php" ?>
         <?php
+
+            session_start();
+            $userid = $_SESSION['userid'];
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $anmelde= $_POST ["user_id"];
@@ -26,7 +29,7 @@
                 $insertSql = $pdo->prepare("INSERT INTO fav (benutzer, produkt) VALUES (?, ?)");
                 $insertSql->bindParam(1, $anmelde, PDO::PARAM_INT);
                 $insertSql->bindParam(2, $produkt, PDO::PARAM_INT);
-                $insertSql->execute();
+                $isertSql->execute();
 
             }
         
@@ -34,7 +37,7 @@
 ?>
         <?php
             $sql = $pdo->prepare("SELECT name, img, preis FROM fav, produkt WHERE fav.benutzer = ? and produkt.id = fav.produkt;");
-            $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
+            $sql->bindParam(1, $userid, PDO::PARAM_INT);
             $sql->execute();
             $query = $sql->fetchAll();
 
