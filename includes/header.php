@@ -27,14 +27,14 @@
             <?php include __DIR__ . "/search.php" ?>
             
             <button class="nav__button">
-                <img src="/img/heart.png" alt="Love">
+            <a href="/shop/favorit.php">  <img src="/img/heart.png" alt="Love"> </a>
             </button>
-            <?php include __DIR__ . "/fav.php" ?>
-
             <button class="nav__button">
-                <img src="/img/purchase.png" alt="Corb">
+            <a href="/shop/warenkorb.php">  <img src="/img/purchase.png" alt="Corb"> </a>
             </button>
-            <?php include __DIR__ . "/cart.php" ?>
+            <button class="nav__button">
+            <a href="/shop/geheim.php"> <img src="/img/house.svg" > </a> 
+            </button>
         </div>
     </nav>
 </header>

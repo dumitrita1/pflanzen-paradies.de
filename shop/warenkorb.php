@@ -13,7 +13,9 @@
 
         
     <?php
+
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $anmelde= $_POST ["user_id"];
             $name = $_POST["name"];
             $grosse = $_POST["grosse"];
             $stuck = $_POST["stuck"];
@@ -21,13 +23,14 @@
 
             $total = $stuck * $preis;
             
-            $sql = $pdo->prepare("INSERT INTO warenkorb (name, grosse, stuck, preis, total) VALUES (?, ?, ?, ?, ?)");
+            $sql = $pdo->prepare("INSERT INTO warenkorb (name, benutzer, grosse, stuck, preis, total) VALUES (?,?, ?, ?, ?, ?)");
 
             $sql->bindParam(1, $name, PDO::PARAM_STR);
-            $sql->bindParam(2, $grosse, PDO::PARAM_STR);
-            $sql->bindParam(3, $stuck, PDO::PARAM_INT);
-            $sql->bindParam(4, $preis, PDO::PARAM_INT);
-            $sql->bindParam(5, $total, PDO::PARAM_INT);
+            $sql->bindParam(2, $anmelde, PDO::PARAM_INT);
+            $sql->bindParam(3, $grosse, PDO::PARAM_STR);
+            $sql->bindParam(4, $stuck, PDO::PARAM_INT);
+            $sql->bindParam(5, $preis, PDO::PARAM_INT);
+            $sql->bindParam(6, $total, PDO::PARAM_INT);
             $sql->execute();
         }
         ?>

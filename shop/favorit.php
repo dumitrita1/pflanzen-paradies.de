@@ -10,29 +10,31 @@
 <body>
     <div class="document">
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/header.php" ?>
-
         <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $anmelde = $_POST["anmeldedaten-id"];
-    $produkt = $_POST["produkt-id"];
-   
-   
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $sql = $pdo->prepare("INSERT INTO fav (benutzer, produkt) VALUES (?, ?) ");
-        $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
-        $sql->bindParam(2, $produkt, PDO::PARAM_INT);
+            $anmelde= $_POST ["user_id"];
+            $produkt = $_POST ["product_id"];
+
+            $sql = $pdo->prepare("SELECT count(*) AS anzahl FROM fav WHERE benutzer = ? AND produkt = ?");
+            $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
+            $sql->bindParam(2, $produkt, PDO::PARAM_INT);
+            $sql->execute();
+            $row_count = $sql->fetchAll();
+
+            if ($row_count[0]['anzahl']== 0) {
+                $insertSql = $pdo->prepare("INSERT INTO fav (benutzer, produkt) VALUES (?, ?)");
+                $insertSql->bindParam(1, $anmelde, PDO::PARAM_INT);
+                $insertSql->bindParam(2, $produkt, PDO::PARAM_INT);
+                $insertSql->execute();
+
+            }
         
-        $sql->execute(); 
-}
+        }
 ?>
-
-
-        <?php 
-        $sql = $pdo->prepare ("SELECT name, img, preis
-        FROM fav, produkt WHERE fav.benutzer = ? and produkt.id = ?;");
-        $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
-        $sql->bindParam(2, $produkt, PDO::PARAM_INT);
-
+        <?php
+            $sql = $pdo->prepare("SELECT name, img, preis FROM fav, produkt WHERE fav.benutzer = ? and produkt.id = fav.produkt;");
+            $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
             $sql->execute();
             $query = $sql->fetchAll();
 
@@ -53,6 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "<button> 🛒 In den Warenkorb</button>";
                 echo "</div>";
             }
+
             echo "</ul>"."</h2>" ."</div>";
             echo "</div>";
     ?>
@@ -66,5 +69,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </html>
 
 
-<input id="name" type="hidden" name="name" value="<?php echo $row['name']; ?>">
-<input id="preis" type="hidden" name="preis" value="<?php echo $row['preis']; ?>">
+
