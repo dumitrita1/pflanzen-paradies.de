@@ -51,8 +51,8 @@
                 $result = $statement->execute(array(':email' => $email, ':password' => $hash_password));
                 
                 if($result) {        
-                    echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
-                    $showFormular = false;
+                    echo "<p class=\"successful-registration\"> Sie haben sich erfolgreich <strong>registriert</strong>. Möchten Sie sich anmelden?
+                    Dann klicken Sie hier: <a href=\"login.php\"> Zum login</a></p>";
                 } else {
                     echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
                 }
@@ -67,10 +67,6 @@
                 <input type="password" name="password" placeholder="Passwort">
                 <input type="password" name="password2" placeholder="Passwort wiederholen">
                 <input type="submit" value="Registrieren">
-            
-            </form>
-            <form action= "login.php">
-            <input type="submit" value="Jetzt anmelden">
             </form>
             
         </div>
@@ -78,6 +74,7 @@
     } 
     ?>
 </main>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/recommendation.php"?>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/footer.php" ?>
 </div>
 </body>

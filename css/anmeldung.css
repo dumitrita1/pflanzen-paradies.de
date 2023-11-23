@@ -5,7 +5,7 @@
 }
 .logout {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10%;
 }
 
 .logout a {
@@ -13,34 +13,52 @@
     text-decoration: none;
     font-weight: bold;
 }
-.setting{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:30%;
-    margin-top: 5%;
-    padding-bottom: 2%;
-    border-bottom: solid rgb(255, 255, 255);
+.log-out__text{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: red;
+}
+.setting-text{
+    padding-top: 5%;
+    padding-left: 2%;
+    font-weight: bold;
 
 }
-.setting button {
-  margin: auto;
-  padding: 5px;
-  width: 7%;
+.personaldaten-form{
+    width: 300px;
+    margin: 2%;
 }
 
-.setting button img {
-     width:15px;
-}
-.setting p {
-    font-size: 1rem;
-    margin: auto;
-}
 .hallo{
-    margin-left: 5%;
+    margin-left: 7%;
 
+}
+.setting-name{
+    margin-left: 5%;
 }
 .link{
   text-align: center;
   text-decoration: none;
+  border-bottom: solid rgb(255, 255, 255);
+  padding-bottom: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
+
 }
+.successful-registration, .nicht-registrirt{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5%;
+    
+}
+.successful-registration strong { 
+    color: #e44d26;
+}
+.anmeldung-form {
+    width: 300px; 
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+

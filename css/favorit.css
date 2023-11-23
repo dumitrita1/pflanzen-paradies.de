@@ -1,6 +1,7 @@
 .favorit-button {
     display: flex;
-    gap: 50%; 
+    gap: 100%; 
     padding-bottom: 3%;
     border-bottom: solid rgb(219, 219, 219);
+    margin:0 auto;
 }
