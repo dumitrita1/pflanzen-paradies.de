@@ -1,0 +1,11 @@
+.cart-list form{
+    display: none;
+
+}
+.warenkorb-delete__button{
+border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  outline: 0 none;
+  position: relative;
+}   

@@ -49,11 +49,12 @@
                         echo "<form action=\"warenkorb.php\" method=\"post\">" ."<label>Große</label>";
                         echo "<select class=\"size\" name=\"grosse\">";
                         foreach ($grosse as $item) {
-                            echo "<option value='" . $item . "'>"  . $item . "</option>";
+                            echo "<option value=\" . $item . \"> $item  </option>";
                         }
                         echo "</select>";
                         echo "<label>Stück</label>";
                         echo "<input type=\"hidden\" name=\"product_id\" value=\"" . $id . "\">";
+                        echo "<input id=\"stuck\" type=\"hidden\" name=\"gross\" value=\"" .$row['grosse'] ."\">";
                         echo "<input id=\"stuck\" type=\"number\" name=\"stuck\" min=\"1\" max=\"10\" value=\"1\">";
                         echo "<input id=\"name\" type=\"hidden\" name=\"name\" value=\"" .$row['name'] . "\">";
                         echo "<input id=\"img\" type=\"hidden\" name=\"img\" value=\"" .$row['img'] . "\">";

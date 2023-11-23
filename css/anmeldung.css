@@ -15,12 +15,12 @@
 }
 .log-out__text{
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: var(--padding-md);
+    padding-bottom: var(--padding-md);
     color: red;
 }
 .setting-text{
-    padding-top: 5%;
+    padding-top: var(--padding-md);
     padding-left: 2%;
     font-weight: bold;
 
@@ -41,7 +41,7 @@
   text-align: center;
   text-decoration: none;
   border-bottom: solid rgb(255, 255, 255);
-  padding-bottom: 5%;
+  padding-bottom: var(--padding-md);
   margin-left: 4%;
   margin-right: 4%;
 
@@ -49,7 +49,7 @@
 .successful-registration, .nicht-registrirt{
     text-align: center;
     font-weight: bold;
-    padding-top: 5%;
+    padding-top: var(--padding-md);
     
 }
 .successful-registration strong { 
@@ -58,7 +58,7 @@
 .anmeldung-form {
     width: 300px; 
     margin: 0 auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: var(--padding-md);
+    padding-bottom: var(--padding-md);
 }
 
