@@ -27,14 +27,7 @@ $userid = $_SESSION['userid'];
             
             $produkt = $_POST["product_id"];
             $anmelde= $_SESSION['userid'];
-
-            $name = $_POST["name"];
-            $grosse = $_POST["grosse"];
-            $stuck = $_POST["stuck"];
-            $preis = $_POST["preis"];
-
-            $total= (int)$stuck * (float)$preis;
-            echo $stuck;
+            
 
             $sql = $pdo->prepare("SELECT count(*) AS anzahl FROM fav WHERE benutzer = ? AND produkt = ?");
             $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
@@ -43,18 +36,10 @@ $userid = $_SESSION['userid'];
             $row_count = $sql->fetchAll();
 
             if ($row_count[0]['anzahl']== 0) {
-            $insertSql = $pdo->prepare("INSERT INTO fav (benutzer, produkt, name, grosse, stuck, preis, total) VALUES (?, ?, ?, ?, ?, ?, ?)");
+            $insertSql = $pdo->prepare("INSERT INTO fav (benutzer, produkt)
+             VALUES (?, ?)");
             $insertSql->bindParam(1, $anmelde, PDO::PARAM_INT);
             $insertSql->bindParam(2, $produkt, PDO::PARAM_INT);
-            $insertSql->bindParam(3, $name, PDO::PARAM_STR);
-            $insertSql->bindParam(4, $grosse, PDO::PARAM_STR);
-            $insertSql->bindParam(5, $stuck, PDO::PARAM_INT);
-            $insertSql->bindParam(6, $preis, PDO::PARAM_INT);
-            $insertSql->bindParam(7, $total, PDO::PARAM_INT);
-
-
-        
-
             $insertSql->execute();
 
             }
@@ -70,12 +55,15 @@ $userid = $_SESSION['userid'];
             }
 
             if (isset($_POST['in-den-warenkorb'])) {
-                $deleteSql = $pdo->prepare("DELETE FROM fav WHERE benutzer = ? AND produkt = ?");
-                $deleteSql->bindParam(1, $anmelde, PDO::PARAM_INT);
-                $deleteSql->bindParam(2, $produkt, PDO::PARAM_INT);
+                $exchangeSql = $pdo->prepare("INSERT INTO warenkorb (benutzer, produkt)
+                SELECT benutzer,produkt
+                FROM fav
+                WHERE benutzer = ? AND produkt = ?");
+                $exchangeSql->bindParam(1, $anmelde, PDO::PARAM_INT);
+                $exchangeSql->bindParam(2, $produkt, PDO::PARAM_INT);
                
                 $deleteSql->execute();    
-                header('Location: favorit.php');
+                header('Location: warenkorb.php');
                 exit; 
             }
             
@@ -84,8 +72,7 @@ $userid = $_SESSION['userid'];
         
 ?>
         <?php
-            $sql = $pdo->prepare("SELECT produkt.id, produkt.name, produkt.img, produkt.preis FROM fav, produkt WHERE fav.benutzer = ? and produkt.id = fav.produkt;");
-
+            $sql = $pdo->prepare("SELECT produkt.id, name, img, preis FROM fav, produkt WHERE fav.benutzer = ? and produkt.id = fav.produkt;");
             $sql->bindParam(1, $userid, PDO::PARAM_INT);
             $sql->execute();
             $query = $sql->fetchAll();
@@ -96,11 +83,10 @@ $userid = $_SESSION['userid'];
             foreach ($query as $row) {
                 echo "<li>"
                     . "<span>" . "<img class=\"product-card__container-img\" src=\"/img/" . $row['img'] . "\" alt="
-                    . $row['name'] 
+                    . $row['name']
                     . ">" . "</span>"
                     . "<span><strong>" . $row['name'] . "</strong></span>";
                 echo "<span>" . $row['preis'] . "€" . "</span>" . "</span></li>";
-            
                 echo "<form method=\"post\">";
                 echo "<input type=\"hidden\" name=\"delete\" >";
                 echo "<input type=\"hidden\" name=\"product_id\" value=\"" . $row['id'] . "\">";

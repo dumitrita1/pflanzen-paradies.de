@@ -31,8 +31,9 @@ $userid = $_SESSION['userid'];
             $grosse = $_POST["grosse"];
             $stuck = $_POST["stuck"];
             $preis = $_POST["preis"];
+            $total= $stuck * $preis;
+            echo $total;
 
-            $total = (int)$stuck * (float)$preis;
 
             $sql = $pdo->prepare("SELECT count(*) AS anzahl FROM fav WHERE benutzer = ? AND produkt = ?");
             $sql->bindParam(1, $anmelde, PDO::PARAM_INT);
@@ -41,7 +42,7 @@ $userid = $_SESSION['userid'];
             $row_count = $sql->fetchAll();
 
             if ($row_count[0]['anzahl']== 0) {
-                $insertSql = $pdo->prepare("INSERT INTO warenkorb (benutzer, produkt,img, name, grosse, stuck, preis) VALUES ( ?, ?, ?, ?, ?, ?, ?)");
+                $insertSql = $pdo->prepare("INSERT INTO warenkorb (benutzer, produkt, img, name, grosse, stuck, preis ) VALUES ( ?, ?, ?, ?, ?, ?, ?)");
                 $insertSql->bindParam(1, $anmelde, PDO::PARAM_INT);
                 $insertSql->bindParam(2, $produkt, PDO::PARAM_INT);
                 $insertSql->bindParam(3, $img, PDO::PARAM_STR);
@@ -49,6 +50,7 @@ $userid = $_SESSION['userid'];
                 $insertSql->bindParam(5, $grosse, PDO::PARAM_STR);
                 $insertSql->bindParam(6, $stuck, PDO::PARAM_INT);
                 $insertSql->bindParam(7, $preis, PDO::PARAM_INT);
+               
                 $insertSql->execute();
             }
             if (isset($_POST['delete'])) {
@@ -63,7 +65,7 @@ $userid = $_SESSION['userid'];
         ?>
 
     <?php 
-      $sql = $pdo->prepare("SELECT produkt.id, warenkorb.name, produkt.img, warenkorb.preis,warenkorb.grosse, warenkorb.stuck, total
+      $sql = $pdo->prepare("SELECT produkt.id, warenkorb.name, produkt.img, warenkorb.preis,warenkorb.grosse, warenkorb.stuck
       FROM warenkorb, produkt WHERE warenkorb.benutzer= ? and produkt.id = warenkorb.produkt;");      
             $sql->bindParam(1, $userid, PDO::PARAM_INT);
             $sql->execute();
@@ -76,11 +78,10 @@ $userid = $_SESSION['userid'];
                 . "<span>" . "<img  class=\"product-card__container-img\" src=\"/img/" . $row['img'] . "\" alt=" 
                 . $row['name'] 
                 . ">". "</span>"
-                ."<span><strong>" . $row['name'] ."</strong></span>"
+                ."<span><strong>" . $row['name']  ."</strong></span>"
                  ."<span>". $row['grosse'] ."</span>"
                  ."<span>". $row['stuck'] ."</span>"
-                 ."<span>" . $row['preis'] ."€" ."</span>"
-                 ."<span>" . $row['total']   . "</span>";
+                 ."<span>" . $row['preis'] ."€" ."</span>";
                  echo "<form class=\"warenkorb-delete__form\" method=\"post\">";
                  echo "<input type=\"hidden\" name=\"delete\" >";
                  echo "<input type=\"hidden\" name=\"product_id\" value=\"" . $row['id'] . "\">";
@@ -90,13 +91,13 @@ $userid = $_SESSION['userid'];
                
             }            
             echo "</ul></div>";
-            $sum = $pdo->prepare("SELECT SUM(total) as total_sum FROM warenkorb");
+            /*$sum = $pdo->prepare("SELECT SUM(total) as total_sum FROM warenkorb");
             $sum->execute();
             $result = $sum->fetch();
             $totalSum = $result['total_sum'];
             
             echo "<p class= \"warenkorb-preis\">Total: $totalSum €</p>";
-
+*/
             echo "<div class=\"cart-button\">";
             echo "<button>⟪ Weiter einkaufen</button>";
             echo "<button>Zur Kasse ⟫</button>";
