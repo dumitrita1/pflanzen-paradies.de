@@ -31,8 +31,7 @@ $userid = $_SESSION['userid'];
             $grosse = $_POST["grosse"];
             $stuck = $_POST["stuck"];
             $preis = $_POST["preis"];
-            $total= $stuck * $preis;
-            echo $total;
+            
 
 
             $sql = $pdo->prepare("SELECT count(*) AS anzahl FROM fav WHERE benutzer = ? AND produkt = ?");
@@ -91,18 +90,17 @@ $userid = $_SESSION['userid'];
                
             }            
             echo "</ul></div>";
-            /*$sum = $pdo->prepare("SELECT SUM(total) as total_sum FROM warenkorb");
+            $sum = $pdo->prepare("SELECT SUM(stuck * preis) as total_sum FROM warenkorb WHERE benutzer = ?");
+            $sum->bindParam(1, $userid, PDO::PARAM_INT);
             $sum->execute();
-            $result = $sum->fetch();
-            $totalSum = $result['total_sum'];
-            
+            $result = $sum->fetch(); 
+            $totalSum = $result['total_sum'];  
             echo "<p class= \"warenkorb-preis\">Total: $totalSum €</p>";
-*/
             echo "<div class=\"cart-button\">";
             echo "<button>⟪ Weiter einkaufen</button>";
             echo "<button>Zur Kasse ⟫</button>";
-            echo "</div>";
-            echo "</div>";
+            echo "</div>" ."</div>";
+
     ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/recommendation.php"?>
@@ -110,5 +108,6 @@ $userid = $_SESSION['userid'];
         </main>
         <?php include  $_SERVER['DOCUMENT_ROOT'] ."/includes/footer.php" ?>
 </div>
+        </div>
     </body>
 </html>
