@@ -41,7 +41,8 @@ $userid = $_SESSION['userid'];
             $row_count = $sql->fetchAll();
 
             if ($row_count[0]['anzahl']== 0) {
-                $insertSql = $pdo->prepare("INSERT INTO warenkorb (benutzer, produkt, img, name, grosse, stuck, preis ) VALUES ( ?, ?, ?, ?, ?, ?, ?)");
+                $insertSql = $pdo->prepare("INSERT INTO warenkorb (benutzer, produkt, img, name, grosse, stuck, preis )
+                 VALUES ( ?, ?, ?, ?, ?, ?, ?)");
                 $insertSql->bindParam(1, $anmelde, PDO::PARAM_INT);
                 $insertSql->bindParam(2, $produkt, PDO::PARAM_INT);
                 $insertSql->bindParam(3, $img, PDO::PARAM_STR);
@@ -78,8 +79,22 @@ $userid = $_SESSION['userid'];
                 . $row['name'] 
                 . ">". "</span>"
                 ."<span><strong>" . $row['name']  ."</strong></span>"
-                 ."<span>". $row['grosse'] ."</span>"
-                 ."<span>". $row['stuck'] ."</span>"
+                 ."<span>"
+                . $row['grosse'] 
+                 ."</span>"
+                 ."<span>"
+                 ."<select>"
+                 ."<option value=\"1\" >1</option>"
+                 ."<option value=\"2\" >2</option>"
+                 ."<option value=\"3\" >3</option>"
+                 ."<option value=\"4\" >4</option>"
+                 ."<option value=\"5\" >5</option>"
+                 ."<option value=\"6\" >6</option>"
+                 ."<option value=\"7\" >7</option>"
+                 ."<option value=\"8\" >8</option>"
+                 ."<option value=\"9\" >9</option>"
+                 ."<option value=\"10\" >10</option>". $row['grosse'] 
+                 ."</select>". $row['stuck'] ."</span>"
                  ."<span>" . $row['preis'] ."€" ."</span>";
                  echo "<form class=\"warenkorb-delete__form\" method=\"post\">";
                  echo "<input type=\"hidden\" name=\"delete\" >";

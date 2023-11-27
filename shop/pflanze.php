@@ -60,16 +60,20 @@
                         echo "<input id=\"preis\" type=\"hidden\" name=\"preis\" value=\"" .$row['preis'] . "\">";
                         echo "<input id=\"total\" type=\"hidden\" name=\"total\" value=\""  . $row['preis'] . "\">";
                         echo "<div class=\"product-form__button\">";
-                        echo "<button class=\"\" type=\"submit\">Zum Warenkorb hinzufügen</button>" ; 
+                        echo "<button class=\"\" type=\"submit\" >Zum Warenkorb hinzufügen</button>" ; 
                         echo "</div></form>";
                         
-                        echo "<form action=\"favorit.php\" method=\"post\">" ;
-                        echo "<input id=\"name\" type=\"hidden\" name=\"name\" value=\"" .$row['name'] . "\">";
-                        echo "<input id=\"preis\" type=\"hidden\" name=\"preis\" value=\"" .$row['preis'] . "\">";
-                        echo "<input id=\"total\" type=\"hidden\" name=\"total\" value=\""  . $row['preis'] . "\">";
-                        echo "<input type=\"hidden\" name=\"user_id\" value=\"" . $userid . "\">";
-                        echo "<input type=\"hidden\" name=\"product_id\" value=\"" . $id . "\">";
+                        echo "<form action=\"favorit.php\" method=\"post\">";
+                        foreach ($grosse as $item) {
+                            echo "<input type=\"hidden\" name=\"grosse\" value='" . $item . "'>";
+                        }
                         echo "<button class=\"\" type=\"submit\">Love it! </button>";
+                        echo "<input type=\"hidden\" name=\"user_id\" value=\"" . $userid . "\">";
+                        echo "<input type=\"hidden\" name=\"id\" value=\"" . $id . "\">";
+                        echo "<input type=\"hidden\" name=\"product_id\" value=\"" . $id . "\">";
+                        echo "<input type=\"hidden\" name=\"name\" value=\"" .$row['name'] . "\">";
+                        echo "<input type=\"hidden\" name=\"preis\" value=\"" .$row['preis'] . "\">";
+                        echo "<input type=\"hidden\" name=\"stuck\" min=\"1\" max=\"10\" value=\"1\">";
                         echo "</form>";
                     }                    
                     echo "</div>" . "</div>";
