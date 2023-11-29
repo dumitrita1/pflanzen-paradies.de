@@ -90,18 +90,26 @@ $userid = $_SESSION['userid'];
                 $updateWarenkorbSql->execute();
             }
             if (isset($_POST['update-stuck'])) {
-                $new_stuck = $_POST['updated-stuck'];
-                echo $new_stuck . "<br>";
-                echo "ich bin hier";
 
-                $updateSql = $pdo->prepare("UPDATE warenkorb SET stuck = :stuck WHERE benutzer = :benutzer AND produkt = :produkt");
-                $updateSql->bindParam(':stuck', $new_stuck, PDO::PARAM_INT);
-                echo $new_stuck;
-                $updateSql->bindParam(':benutzer', $anmelde, PDO::PARAM_INT);
-                $updateSql->bindParam(':produkt', $product_id, PDO::PARAM_INT);
+                $product_ids = $_POST['product_ids'];
+                $updated_stucks = $_POST['updated-stucks'];
 
-                $updateSql->execute();
+                foreach ($product_ids as $index => $product_id) {
 
+                    $new_stuck = $updated_stucks[$index];
+
+                    echo $new_stuck . "<br>";
+
+                    echo "ich bin hier";
+
+                    $updateSql = $pdo->prepare("UPDATE warenkorb SET stuck = :stuck WHERE benutzer = :benutzer AND produkt = :produkt");
+                    $updateSql->bindParam(':stuck', $new_stuck, PDO::PARAM_INT);
+                    echo $new_stuck;
+                    $updateSql->bindParam(':benutzer', $anmelde, PDO::PARAM_INT);
+                    $updateSql->bindParam(':produkt', $product_id, PDO::PARAM_INT);
+
+                    $updateSql->execute();
+                }
 
             }
         }
@@ -128,12 +136,13 @@ $userid = $_SESSION['userid'];
                 . "<span>"
                 . $row['grosse']
                 . "</span>";
+            echo "<input type=\"hidden\" name=\"product_ids[]\" value=\"" . $row['id'] . "\">";
             echo "<span>";
-            echo "<input type=\"number\" name=\"updated-stuck\" min= \"0\" max=\"10\" value=\"" . $row['stuck'] . "\" style=\"width:70px\" >"
+            echo "<input type=\"number\" name=\"updated-stucks[]\" min= \"0\" max=\"10\" value=\"" . $row['stuck'] . "\" style=\"width:70px\" >"
                 . "</span>";
 
             echo "<span>" . $row['preis'] . "€" . "</span>";
-            echo "<span><a href=\"?remove=" . $row['id'] . "\"</span>";
+            echo "<span><a href=\"?remove=" . $row['id'] . "\">X</a></span>";
             /*echo "<form class=\"warenkorb-delete__form\" method=\"post\">";
             echo "<input type=\"hidden\" name=\"delete\" >";
             echo "<input type=\"hidden\" name=\"product_id\" value=\"" . $row['id'] . "\">";
