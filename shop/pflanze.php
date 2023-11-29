@@ -54,7 +54,7 @@
                         echo "</select>";
                         echo "<label>Stück</label>";
                         echo "<input type=\"hidden\" name=\"product_id\" value=\"" . $id . "\">";
-                        echo "<input id=\"stuck\" type=\"number\" name=\"stuck\" min=\"1\" max=\"10\" value=\"1\">";
+                        echo "<input id=\"stuck\" type=\"number\" name=\"stuck\" min=\"0\" max=\"10\" value=\"1\">";
                         echo "<input id=\"name\" type=\"hidden\" name=\"name\" value=\"" .$row['name'] . "\">";
                         echo "<input id=\"img\" type=\"hidden\" name=\"img\" value=\"" .$row['img'] . "\">";
                         echo "<input id=\"preis\" type=\"hidden\" name=\"preis\" value=\"" .$row['preis'] . "\">";
@@ -101,8 +101,6 @@
                 ?>
 
             </div>
-        </div>
-        </div>
             
             <?php include $_SERVER['DOCUMENT_ROOT'] . "/includes/recommendation.php"?>
             <?php include  $_SERVER['DOCUMENT_ROOT'] ."/includes/reise.php"?>
