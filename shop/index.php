@@ -1,23 +1,29 @@
-<?php include "../config/database.php" ?>
+<?php include  $_SERVER['DOCUMENT_ROOT'] . "/config/database.php" ?>
+
 <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Pflanzen Paradies</title>
-        <?php include "../includes/meta.php" ?>
+        <?php include  $_SERVER['DOCUMENT_ROOT'] ."/includes/meta.php" ?>
     </head>
     <body>
-        <?php include "../includes/header.php" ?>
+        <?php include  $_SERVER['DOCUMENT_ROOT'] ."/includes/header.php" ?>
 
         <main> 
     <div class="document">
-            <div class="shop-header">
-                <h1 class="text">Unsere Pflanzen </h1>
-                <p class="text">〰️〰️</p>
-                <p class="shop-header_text">
-                Schöne, lebendige und harmonische Pflanzen eignen sich hervorragend zur Dekoration und Veränderung des Stils jedes Ortes. Sie können sogar Lärm absorbieren und eine Umgebung würzen. Nachfolgend finden Sie eine Liste von über 20 Pflanzen, die Ihr Zuhause oder Ihren Garten bunter machen können.
-                </p>
-            </div>
+    <?php 
+               $sql = $pdo->prepare ("SELECT name, text1, text2 FROM seite where id=3");
+               $sql->execute();
+               $query = $sql->fetchAll();
+               foreach ($query as $row) {
+               echo "<div class=\"shop-header\">";
+               echo "<h1 class=\"text\">"  . $row['name'] ."</h2>"; 
+               echo "<p class=\"text\">"  . $row['text1'] ."</p>"; 
+               echo "<p class=\"shop-header_text\">"  . $row['text2'] ."</p>" ."</div>"; 
+               }
+               
+               ?>
             <div class="shop">
                 <h2 class= "filter-text"> Sortieren <h2>
                     <div class="filter-shop">
@@ -47,12 +53,12 @@
             <div class="display-flex-shop">
                     
                 <?php
-                $sql = "SELECT id, img, name, preis,  name_kategorie, grosse
+                $sql = $pdo->prepare ("SELECT id, img, name, preis,  name_kategorie, grosse
                 FROM produkt
                 INNER JOIN kategorie ON produkt.category = `kategorie`.`id-kategorie`
-               ";
-                $query = $pdo->query($sql);
-
+               ");
+                $sql->execute();
+                $query = $sql->fetchAll();
                         foreach ( $query as $row) {
                         echo "<li class=\"shop-list__link\" 
                         data-ort=\"" . strtolower($row['name_kategorie']) . 
@@ -72,10 +78,10 @@
 
             </div>
             </div>
-            <?php include "../includes/reise.php"?>
+            <?php include  $_SERVER['DOCUMENT_ROOT'] ."/includes/reise.php"?>
         </main>
 
-        <?php include "../includes/footer.php" ?>
+        <?php include  $_SERVER['DOCUMENT_ROOT'] ."/includes/footer.php" ?>
     </div>
     </body>
 </html>

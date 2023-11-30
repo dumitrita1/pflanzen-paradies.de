@@ -1,0 +1,64 @@
+.anmeldenbutton{
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.logout {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.logout a {
+    color: #e44d26;
+    text-decoration: none;
+    font-weight: bold;
+}
+.log-out__text{
+    text-align: center;
+    padding-top: var(--padding-md);
+    padding-bottom: var(--padding-md);
+    color: red;
+}
+.setting-text{
+    padding-top: var(--padding-md);
+    padding-left: 2%;
+    font-weight: bold;
+
+}
+.personaldaten-form{
+    width: 300px;
+    margin: 2%;
+}
+
+.hallo{
+    margin-left: 7%;
+
+}
+.setting-name{
+    margin-left: 5%;
+}
+.link{
+  text-align: center;
+  text-decoration: none;
+  border-bottom: solid rgb(255, 255, 255);
+  padding-bottom: var(--padding-md);
+  margin-left: 4%;
+  margin-right: 4%;
+
+}
+.successful-registration, .nicht-registrirt{
+    text-align: center;
+    font-weight: bold;
+    padding-top: var(--padding-md);
+    
+}
+.successful-registration strong { 
+    color: #e44d26;
+}
+.anmeldung-form {
+    width: 300px; 
+    margin: 0 auto;
+    padding-top: var(--padding-md);
+    padding-bottom: var(--padding-md);
+}
+

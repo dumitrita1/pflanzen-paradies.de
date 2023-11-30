@@ -1,3 +1,4 @@
+<?php include  $_SERVER['DOCUMENT_ROOT'] . "/config/database.php" ?>
 <!doctype html>
 <html>
     <head>
@@ -10,10 +11,16 @@
         <?php include "../includes/header.php" ?>
 
         <main>
-            <h1 class=text>
-                Die schönsten Dekorationen für Ihre Pflanzen
-            </h1>
-            <p class="text">〰️〰️</p>
+        <?php 
+               $sql = $pdo->prepare("SELECT name, text1 FROM seite where id=4");
+               $sql->execute();
+                $query = $sql->fetchAll();
+               foreach ($query as $row) {
+               echo "<h1 class=\"text\">"  . $row['name'] ."</h2>"; 
+               echo "<p class=\"text\">"  . $row['text1'] ."</p>"; 
+               }
+               
+        ?>
             <div class=deko-shop>
                     <div class="deko-shop__produs">
                         <a href ="/deko/trockenen-blumen">

@@ -1,5 +1,5 @@
 .shop-header{
-    padding: 5%;
+    padding: var(--padding-md);
 }
 .shop-header_text{
     font-size: var(--size-md);
@@ -29,7 +29,7 @@
 }
 
 .shop-list__link {
-    padding-bottom: 5%;
+    padding-bottom: var(--padding-md);
     list-style: none;
 }
 .shop-list__link img {

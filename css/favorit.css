@@ -1,0 +1,7 @@
+.favorit-button {
+    display: flex;
+    gap: 100%; 
+    padding-bottom: var(--padding-md);
+    border-bottom: solid var(--border-color);
+    
+}
