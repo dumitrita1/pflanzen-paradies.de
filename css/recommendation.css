@@ -7,6 +7,7 @@
     background-color: var( --color-second);
     padding: 5%;
 }
+
 .recommendation-list {
     padding-top: 3%;
     list-style: none;
